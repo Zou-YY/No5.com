@@ -1,0 +1,111 @@
+@import "common";
+
+/*main*/
+.main-con{
+    width:980px;
+    height:635px;
+    background:#fff;
+    padding-top:10px;
+    margin:0 auto;
+    .con-box{
+        width:980px;
+        height:585px;
+        padding-top:50px;
+        border:1px solid #c6e6f3;
+        h2{
+            width:620px;
+            height:42px;
+            background:url(../img/reg-bg.png) no-repeat -162px -70px;
+            margin:0 auto;
+        }
+        form{
+            width:620px;
+            margin:0 auto;
+            padding-left:300px;
+            padding-top:37px;
+            p{
+                height:55px;
+                position:relative;
+                .width60{
+                    display:inline-block;
+                    width:60px;
+                    text-align:right;
+                }
+                .input-default{
+                    width:200px;
+                    height:16px;
+                    padding:2px;
+                    border:1px solid #7f9db9;
+                }
+                .input-focus{
+                    border:1px solid #008;
+                    background-color:#eaf5ff;
+                }
+                .input-failure{
+                    border:1px solid maroon;
+                    background-color:#fffddf;
+                    color:#800;
+                }
+                u{
+                    display:none;
+                    position:absolute;
+                    top:5px;
+                    left:300px;
+                    width:13px;
+                    height:12px;
+                    background:url(../img/right.png) no-repeat;
+                }
+                span{
+                    display:block;
+                    height:20px;
+                    line-height:22px;
+                    font-size:12px;
+                    padding-left:65px;
+                    color:#515151;
+                    font-family:verdana,geneva,arial,helvetica,sans-serif;
+                    white-space:normal;
+                }
+                #securityCode{
+                    width:50px;
+                }
+            }
+            .randomCode{
+                position:relative;
+                b{
+                    position:absolute;
+                    top:0;
+                    left:125px;
+                    width:60px;
+                    height:22px;
+                    font-size:24px;
+                    line-height:22px;
+                    background:#ccc;
+                    text-align:center;
+                }
+            }
+            .clientAgreement{
+                color:#0080ff;
+            }
+            .input-btn{
+                margin-left:100px;
+            }
+        }
+        .login{
+            width:300px;
+            margin:0 auto;
+            a{
+                color:#0080ff;
+            }
+        }
+        em{
+            display:block;
+            height:3px;
+            width:671px;
+            background:url(../img/reg-bg.png) no-repeat -161px -435px;
+            margin:60px auto;
+        }
+    }
+}
+
+
+

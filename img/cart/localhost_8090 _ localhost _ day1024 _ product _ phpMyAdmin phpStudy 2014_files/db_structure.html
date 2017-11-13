@@ -1,0 +1,1276 @@
+<!DOCTYPE html>
+<!-- saved from url=(0114)http://localhost:8090/phpMyAdmin/tbl_structure.php?db=day1024&table=product&token=3962c389da5c79346da0da09fb38a975 -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh" lang="zh" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="icon" href="http://localhost:8090/phpMyAdmin/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="http://localhost:8090/phpMyAdmin/favicon.ico" type="image/x-icon">
+    <title>phpMyAdmin</title>
+    <link rel="stylesheet" type="text/css" href="./phpmyadmin.css(1).php">
+    <link rel="stylesheet" type="text/css" href="./print.css" media="print">
+    <link rel="stylesheet" type="text/css" href="./jquery-ui-1.8.16.custom.css">
+    <meta name="robots" content="noindex,nofollow">
+<script src="./cross_framing_protection.js.下载" type="text/javascript"></script>
+<script src="./jquery-1.6.2+fix-9521.js.下载" type="text/javascript"></script>
+<script src="./jquery-ui-1.8.16.custom.js.下载" type="text/javascript"></script>
+<script src="./update-location.js.下载" type="text/javascript"></script>
+<script src="./tbl_structure.js.下载" type="text/javascript"></script>
+<script src="./indexes.js.下载" type="text/javascript"></script>
+<script src="./config.js.下载" type="text/javascript"></script>
+<script src="./functions.js.下载" type="text/javascript"></script>
+<script src="./jquery.qtip-1.0.0-rc3.js.下载" type="text/javascript"></script>
+<script src="./messages(1).php" type="text/javascript"></script>
+<script src="./get_image.js.php" type="text/javascript"></script>
+<script type="text/javascript">
+// <![CDATA[
+if (typeof(parent.document) != 'undefined' && typeof(parent.document) != 'unknown'
+    && typeof(parent.document.title) == 'string') {
+    parent.document.title = 'localhost:8090 / localhost / day1024 / product | phpMyAdmin phpStudy 2014';
+}
+// ]]>
+</script>
+        <meta name="OBGZip" content="true">
+                <!--[if IE 6]>
+        <style type="text/css">
+        /* <![CDATA[ */
+        html {
+            overflow-y: scroll;
+        }
+        /* ]]> */
+        </style>
+        <![endif]-->
+    </head>
+
+    <body style="padding-top: 60px;"><div id="loading_parent"></div>
+            <div id="prefs_autoload" class="notice" style="display:none">
+        <form action="http://localhost:8090/phpMyAdmin/prefs_manage.php" method="post">
+            <input type="hidden" name="token" value="3962c389da5c79346da0da09fb38a975">
+            <input type="hidden" name="json" value="">
+            <input type="hidden" name="submit_import" value="1">
+            <input type="hidden" name="return_url" value="tbl_structure.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975">
+            你的浏览器中有当前域的 phpMyAdmin 设置。是否导入到当前会话中？            <br>
+            <a href="http://localhost:8090/phpMyAdmin/tbl_structure.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975#yes">是</a> / <a href="http://localhost:8090/phpMyAdmin/tbl_structure.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975#no">否</a>
+        </form>
+    </div>
+    <div id="floating_menubar" style="position: fixed; top: 0px; left: 0px; width: 100%; z-index: 500;"><div id="serverinfo">
+<img src="./dot.gif" title="" alt="" class="icon ic_s_host item">
+<a href="http://localhost:8090/phpMyAdmin/main.php?token=3962c389da5c79346da0da09fb38a975" class="item">localhost</a>
+<span class="separator item">&nbsp;»</span>
+<img src="./dot.gif" title="" alt="" class="icon ic_s_db item">
+<a href="http://localhost:8090/phpMyAdmin/db_structure.php?db=day1024&amp;token=3962c389da5c79346da0da09fb38a975" class="item">day1024</a>
+<span class="separator item">&nbsp;»</span>
+<img src="./dot.gif" title="" alt="" class="icon ic_s_tbl item">
+<a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975" class="item">product</a>
+<span class="hide" id="update_recent_tables"></span><div class="clearfloat"></div></div><div id="topmenucontainer" class="menucontainer"><ul id="topmenu"><li><a class="tab" href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;pos=0"><img src="./dot.gif" title="" alt="" class="icon ic_b_browse">浏览</a></li><li class="active"><a class="tabactive" href="http://localhost:8090/phpMyAdmin/tbl_structure.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975"><img src="./dot.gif" title="" alt="" class="icon ic_b_props">结构</a></li><li><a class="tab" href="http://localhost:8090/phpMyAdmin/tbl_sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975"><img src="./dot.gif" title="" alt="" class="icon ic_b_sql">SQL</a></li><li><a class="tab" href="http://localhost:8090/phpMyAdmin/tbl_select.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975"><img src="./dot.gif" title="" alt="" class="icon ic_b_search">搜索</a></li><li><a class="tab" href="http://localhost:8090/phpMyAdmin/tbl_change.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975"><img src="./dot.gif" title="" alt="" class="icon ic_b_insrow">插入</a></li><li><a class="tab" href="http://localhost:8090/phpMyAdmin/tbl_export.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;single_table=true"><img src="./dot.gif" title="" alt="" class="icon ic_b_tblexport">导出</a></li><li><a class="tab" href="http://localhost:8090/phpMyAdmin/tbl_import.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975"><img src="./dot.gif" title="" alt="" class="icon ic_b_tblimport">导入</a></li><li><a class="tab" href="http://localhost:8090/phpMyAdmin/tbl_operations.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975"><img src="./dot.gif" title="" alt="" class="icon ic_b_tblops">操作</a></li><li><a class="tab" href="http://localhost:8090/phpMyAdmin/tbl_triggers.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975"><img src="./dot.gif" title="" alt="" class="icon ic_b_triggers">触发器</a></li><li class="submenu" style=""><a href="http://localhost:8090/phpMyAdmin/tbl_structure.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975#" class="tab"><img alt="" title="" src="./dot.gif" class="icon ic_b_more">更多</a><ul class="notonly"></ul></li></ul>
+<div class="clearfloat"></div></div></div>
+
+<form method="post" action="http://localhost:8090/phpMyAdmin/tbl_structure.php" name="fieldsForm" id="fieldsForm" class="ajax">
+    <input type="hidden" name="db" value="day1024"><input type="hidden" name="table" value="product"><input type="hidden" name="token" value="3962c389da5c79346da0da09fb38a975"><input type="hidden" name="table_type" value="table">
+<table id="tablestructure" class="data">
+<thead>
+<tr>
+    <th id="th1"></th>
+    <th id="th2">#</th>
+    <th id="th3" class="column">名字</th>
+    <th id="th4" class="type">类型</th>
+    <th id="th5" class="collation">整理</th>
+    <th id="th6" class="attributes">属性</th>
+    <th id="th7" class="null">空</th>
+    <th id="th8" class="default">默认</th>
+    <th id="th9" class="extra">额外</th>
+    <th colspan="8" id="th10" class="action">操作</th>
+</tr>
+</thead>
+<tbody>
+
+
+<tr class="odd">
+    <td align="center">
+        <input type="checkbox" name="selected_fld[]" value="p_id" id="checkbox_row_1">
+    </td>
+    <td align="right">
+        1    </td>
+    <th nowrap="nowrap"><label for="checkbox_row_1"><u>p_id</u></label></th>
+    <td nowrap="nowrap"><bdo dir="ltr" xml:lang="en">int(4)</bdo></td>
+    <td></td>
+    <td nowrap="nowrap" class="column_attribute"> </td>
+    <td>否</td>
+    <td nowrap="nowrap"><i>无</i></td>
+    <td nowrap="nowrap">AUTO_INCREMENT</td>
+        <td align="center" class="edit">
+        <a href="http://localhost:8090/phpMyAdmin/tbl_alter.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;field=p_id">
+            <span class="nowrap"><img src="./dot.gif" title="修改" alt="修改" class="icon ic_b_edit"> 修改</span></a>
+    </td>
+    <td align="center" class="drop">
+        <a class="drop_column_anchor" href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60product%60+DROP+%60p_id%60&amp;dropped_column=p_id&amp;message_to_show=%E5%B7%B2%E5%88%A0%E9%99%A4%E5%AD%97%E6%AE%B5+p_id">
+            <span class="nowrap"><img src="./dot.gif" title="删除" alt="删除" class="icon ic_b_drop"> 删除</span></a>
+    </td>
+        <td align="center" class="browse replaced_by_more">
+        <a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=SELECT+COUNT%28%2A%29+AS+%60%E8%A1%8C%E6%95%B0%60%2C+%60p_id%60+FROM+%60product%60+GROUP+BY+%60p_id%60+ORDER+BY+%60p_id%60">
+            <span class="nowrap"><img src="./dot.gif" title="浏览非重复值 (DISTINCT)" alt="浏览非重复值 (DISTINCT)" class="icon ic_b_browse"> 浏览非重复值 (DISTINCT)</span></a>
+    </td>
+        <td align="center" class="primary replaced_by_more">
+        <span class="nowrap"><img src="./dot.gif" title="主键" alt="主键" class="icon ic_bd_primary"> 主键</span>
+
+    </td>
+    <td align="center" class="unique replaced_by_more">
+        
+        <a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60product%60+ADD+UNIQUE%28%60p_id%60%29&amp;message_to_show=%E5%B7%B2%E5%B0%86+p_id+%E8%AE%BE%E4%B8%BA%E7%B4%A2%E5%BC%95">
+            <span class="nowrap"><img src="./dot.gif" title="唯一" alt="唯一" class="icon ic_b_unique"> 唯一</span></a>
+            
+    </td>
+    <td align="center" class="index replaced_by_more" style="display: none;">
+        
+        <a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60product%60+ADD+INDEX%28%60p_id%60%29&amp;message_to_show=%E5%B7%B2%E5%B0%86+p_id+%E8%AE%BE%E4%B8%BA%E7%B4%A2%E5%BC%95">
+            <span class="nowrap"><img src="./dot.gif" title="索引" alt="索引" class="icon ic_b_index"> 索引</span></a>
+            
+    </td>
+            <td align="center" class="spatial replaced_by_more" style="display: none;">
+        <span class="nowrap"><img src="./dot.gif" title="空间" alt="空间" class="icon ic_bd_spatial"> 空间</span>
+
+    </td>
+    
+    <td align="center" nowrap="nowrap" class="fulltext replaced_by_more" style="display: none;">
+        <span class="nowrap"><img src="./dot.gif" title="全文搜索" alt="全文搜索" class="icon ic_bd_ftext"> 全文搜索</span>
+            </td>
+        
+    <td class="more_opts" id="more_opts1" style="display: table-cell;">
+        <img src="./dot.gif" title="显示更多操作" alt="显示更多操作" class="icon ic_more"> 更多        <div class="structure_actions_dropdown" id="row_1" style="top: 123.688px; left: 860.688px;">
+
+            <div class="action_browse replace_in_more" style="display: none;">
+                <a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=SELECT+COUNT%28%2A%29+AS+%60%E8%A1%8C%E6%95%B0%60%2C+%60p_id%60+FROM+%60product%60+GROUP+BY+%60p_id%60+ORDER+BY+%60p_id%60">
+                    <span class="nowrap"><img src="./dot.gif" title="浏览非重复值 (DISTINCT)" alt="浏览非重复值 (DISTINCT)" class="icon ic_b_browse"> 浏览非重复值 (DISTINCT)</span>                </a>
+            </div>
+            <div class="action_primary replace_in_more" style="display: none;">
+                <span class="nowrap"><img src="./dot.gif" title="添加主键" alt="添加主键" class="icon ic_bd_primary"> 添加主键</span>            </div>
+            <div class="action_unique replace_in_more" style="display: none;">
+                                         <a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60product%60+ADD+UNIQUE%28%60p_id%60%29&amp;message_to_show=%E5%B7%B2%E5%B0%86+p_id+%E8%AE%BE%E4%B8%BA%E7%B4%A2%E5%BC%95">
+                             <span class="nowrap"><img src="./dot.gif" title="添加唯一键" alt="添加唯一键" class="icon ic_b_unique"> 添加唯一键</span>                         </a>
+                                 </div>
+            <div class="action_index replace_in_more" style="">
+                                        <a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60product%60+ADD+INDEX%28%60p_id%60%29&amp;message_to_show=%E5%B7%B2%E5%B0%86+p_id+%E8%AE%BE%E4%B8%BA%E7%B4%A2%E5%BC%95">
+                             <span class="nowrap"><img src="./dot.gif" title="添加索引" alt="添加索引" class="icon ic_b_index"> 添加索引</span>                         </a>
+                                 </div>
+                        <div class="action_spatial replace_in_more" style="">
+                <span class="nowrap"><img src="./dot.gif" title="添加空间索引" alt="添加空间索引" class="icon ic_bd_spatial"> 添加空间索引</span>            </div>
+            <div class="action_fulltext replace_in_more" style="">
+                <span class="nowrap"><img src="./dot.gif" title="添加全文索引" alt="添加全文索引" class="icon ic_bd_ftext"> 添加全文索引</span>            </div>
+                    </div>
+    </td>
+    </tr>
+    
+<tr class="even">
+    <td align="center">
+        <input type="checkbox" name="selected_fld[]" value="p_name" id="checkbox_row_2">
+    </td>
+    <td align="right">
+        2    </td>
+    <th nowrap="nowrap"><label for="checkbox_row_2">p_name</label></th>
+    <td nowrap="nowrap"><bdo dir="ltr" xml:lang="en">varchar(100)</bdo></td>
+    <td><dfn title="Unicode (多语言), 不区分大小写">utf8_general_ci</dfn></td>
+    <td nowrap="nowrap" class="column_attribute"> </td>
+    <td>否</td>
+    <td nowrap="nowrap"><i>无</i></td>
+    <td nowrap="nowrap"></td>
+        <td align="center" class="edit">
+        <a href="http://localhost:8090/phpMyAdmin/tbl_alter.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;field=p_name">
+            <span class="nowrap"><img src="./dot.gif" title="修改" alt="修改" class="icon ic_b_edit"> 修改</span></a>
+    </td>
+    <td align="center" class="drop">
+        <a class="drop_column_anchor" href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60product%60+DROP+%60p_name%60&amp;dropped_column=p_name&amp;message_to_show=%E5%B7%B2%E5%88%A0%E9%99%A4%E5%AD%97%E6%AE%B5+p_name">
+            <span class="nowrap"><img src="./dot.gif" title="删除" alt="删除" class="icon ic_b_drop"> 删除</span></a>
+    </td>
+        <td align="center" class="browse replaced_by_more">
+        <a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=SELECT+COUNT%28%2A%29+AS+%60%E8%A1%8C%E6%95%B0%60%2C+%60p_name%60+FROM+%60product%60+GROUP+BY+%60p_name%60+ORDER+BY+%60p_name%60">
+            <span class="nowrap"><img src="./dot.gif" title="浏览非重复值 (DISTINCT)" alt="浏览非重复值 (DISTINCT)" class="icon ic_b_browse"> 浏览非重复值 (DISTINCT)</span></a>
+    </td>
+        <td align="center" class="primary replaced_by_more">
+        
+        <a class="add_primary_key_anchor" href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60product%60+DROP+PRIMARY+KEY%2C+ADD+PRIMARY+KEY%28%60p_name%60%29&amp;message_to_show=%E5%B7%B2%E5%B0%86+p_name+%E8%AE%BE%E4%B8%BA%E4%B8%BB%E9%94%AE">
+            <span class="nowrap"><img src="./dot.gif" title="主键" alt="主键" class="icon ic_b_primary"> 主键</span></a>
+            
+    </td>
+    <td align="center" class="unique replaced_by_more">
+        
+        <a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60product%60+ADD+UNIQUE%28%60p_name%60%29&amp;message_to_show=%E5%B7%B2%E5%B0%86+p_name+%E8%AE%BE%E4%B8%BA%E7%B4%A2%E5%BC%95">
+            <span class="nowrap"><img src="./dot.gif" title="唯一" alt="唯一" class="icon ic_b_unique"> 唯一</span></a>
+            
+    </td>
+    <td align="center" class="index replaced_by_more" style="display: none;">
+        
+        <a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60product%60+ADD+INDEX%28%60p_name%60%29&amp;message_to_show=%E5%B7%B2%E5%B0%86+p_name+%E8%AE%BE%E4%B8%BA%E7%B4%A2%E5%BC%95">
+            <span class="nowrap"><img src="./dot.gif" title="索引" alt="索引" class="icon ic_b_index"> 索引</span></a>
+            
+    </td>
+            <td align="center" class="spatial replaced_by_more" style="display: none;">
+        <span class="nowrap"><img src="./dot.gif" title="空间" alt="空间" class="icon ic_bd_spatial"> 空间</span>
+
+    </td>
+    
+    <td align="center" nowrap="nowrap" class="fulltext replaced_by_more" style="display: none;">
+        <a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60product%60+ADD+FULLTEXT%28%60p_name%60%29&amp;message_to_show=%E5%B7%B2%E5%B0%86+p_name+%E8%AE%BE%E4%B8%BA%E7%B4%A2%E5%BC%95">
+            <span class="nowrap"><img src="./dot.gif" title="全文搜索" alt="全文搜索" class="icon ic_b_ftext"> 全文搜索</span></a>
+                </td>
+            
+    <td class="more_opts" id="more_opts2" style="display: table-cell;">
+        <img src="./dot.gif" title="显示更多操作" alt="显示更多操作" class="icon ic_more"> 更多        <div class="structure_actions_dropdown" id="row_2" style="top: 148.688px; left: 860.688px;">
+
+            <div class="action_browse replace_in_more" style="display: none;">
+                <a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=SELECT+COUNT%28%2A%29+AS+%60%E8%A1%8C%E6%95%B0%60%2C+%60p_name%60+FROM+%60product%60+GROUP+BY+%60p_name%60+ORDER+BY+%60p_name%60">
+                    <span class="nowrap"><img src="./dot.gif" title="浏览非重复值 (DISTINCT)" alt="浏览非重复值 (DISTINCT)" class="icon ic_b_browse"> 浏览非重复值 (DISTINCT)</span>                </a>
+            </div>
+            <div class="action_primary replace_in_more" style="display: none;">
+                                          <a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60product%60+DROP+PRIMARY+KEY%2C+ADD+PRIMARY+KEY%28%60p_name%60%29&amp;message_to_show=%E5%B7%B2%E5%B0%86+p_name+%E8%AE%BE%E4%B8%BA%E4%B8%BB%E9%94%AE">
+                             <span class="nowrap"><img src="./dot.gif" title="添加主键" alt="添加主键" class="icon ic_b_primary"> 添加主键</span>                         </a>
+                                 </div>
+            <div class="action_unique replace_in_more" style="display: none;">
+                                         <a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60product%60+ADD+UNIQUE%28%60p_name%60%29&amp;message_to_show=%E5%B7%B2%E5%B0%86+p_name+%E8%AE%BE%E4%B8%BA%E7%B4%A2%E5%BC%95">
+                             <span class="nowrap"><img src="./dot.gif" title="添加唯一键" alt="添加唯一键" class="icon ic_b_unique"> 添加唯一键</span>                         </a>
+                                 </div>
+            <div class="action_index replace_in_more" style="">
+                                        <a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60product%60+ADD+INDEX%28%60p_name%60%29&amp;message_to_show=%E5%B7%B2%E5%B0%86+p_name+%E8%AE%BE%E4%B8%BA%E7%B4%A2%E5%BC%95">
+                             <span class="nowrap"><img src="./dot.gif" title="添加索引" alt="添加索引" class="icon ic_b_index"> 添加索引</span>                         </a>
+                                 </div>
+                        <div class="action_spatial replace_in_more" style="">
+                <span class="nowrap"><img src="./dot.gif" title="添加空间索引" alt="添加空间索引" class="icon ic_bd_spatial"> 添加空间索引</span>            </div>
+            <div class="action_fulltext replace_in_more" style="">
+                                         <a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60product%60+ADD+FULLTEXT%28%60p_name%60%29&amp;message_to_show=%E5%B7%B2%E5%B0%86+p_name+%E8%AE%BE%E4%B8%BA%E7%B4%A2%E5%BC%95">
+                             <span class="nowrap"><img src="./dot.gif" title="添加全文索引" alt="添加全文索引" class="icon ic_b_ftext"> 添加全文索引</span>                         </a>
+                                 </div>
+                    </div>
+    </td>
+    </tr>
+    
+<tr class="odd">
+    <td align="center">
+        <input type="checkbox" name="selected_fld[]" value="img_url" id="checkbox_row_3">
+    </td>
+    <td align="right">
+        3    </td>
+    <th nowrap="nowrap"><label for="checkbox_row_3">img_url</label></th>
+    <td nowrap="nowrap"><bdo dir="ltr" xml:lang="en">varchar(200)</bdo></td>
+    <td><dfn title="Unicode (多语言), 不区分大小写">utf8_general_ci</dfn></td>
+    <td nowrap="nowrap" class="column_attribute"> </td>
+    <td>否</td>
+    <td nowrap="nowrap"><i>无</i></td>
+    <td nowrap="nowrap"></td>
+        <td align="center" class="edit">
+        <a href="http://localhost:8090/phpMyAdmin/tbl_alter.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;field=img_url">
+            <span class="nowrap"><img src="./dot.gif" title="修改" alt="修改" class="icon ic_b_edit"> 修改</span></a>
+    </td>
+    <td align="center" class="drop">
+        <a class="drop_column_anchor" href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60product%60+DROP+%60img_url%60&amp;dropped_column=img_url&amp;message_to_show=%E5%B7%B2%E5%88%A0%E9%99%A4%E5%AD%97%E6%AE%B5+img_url">
+            <span class="nowrap"><img src="./dot.gif" title="删除" alt="删除" class="icon ic_b_drop"> 删除</span></a>
+    </td>
+        <td align="center" class="browse replaced_by_more">
+        <a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=SELECT+COUNT%28%2A%29+AS+%60%E8%A1%8C%E6%95%B0%60%2C+%60img_url%60+FROM+%60product%60+GROUP+BY+%60img_url%60+ORDER+BY+%60img_url%60">
+            <span class="nowrap"><img src="./dot.gif" title="浏览非重复值 (DISTINCT)" alt="浏览非重复值 (DISTINCT)" class="icon ic_b_browse"> 浏览非重复值 (DISTINCT)</span></a>
+    </td>
+        <td align="center" class="primary replaced_by_more">
+        
+        <a class="add_primary_key_anchor" href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60product%60+DROP+PRIMARY+KEY%2C+ADD+PRIMARY+KEY%28%60img_url%60%29&amp;message_to_show=%E5%B7%B2%E5%B0%86+img_url+%E8%AE%BE%E4%B8%BA%E4%B8%BB%E9%94%AE">
+            <span class="nowrap"><img src="./dot.gif" title="主键" alt="主键" class="icon ic_b_primary"> 主键</span></a>
+            
+    </td>
+    <td align="center" class="unique replaced_by_more">
+        
+        <a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60product%60+ADD+UNIQUE%28%60img_url%60%29&amp;message_to_show=%E5%B7%B2%E5%B0%86+img_url+%E8%AE%BE%E4%B8%BA%E7%B4%A2%E5%BC%95">
+            <span class="nowrap"><img src="./dot.gif" title="唯一" alt="唯一" class="icon ic_b_unique"> 唯一</span></a>
+            
+    </td>
+    <td align="center" class="index replaced_by_more" style="display: none;">
+        
+        <a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60product%60+ADD+INDEX%28%60img_url%60%29&amp;message_to_show=%E5%B7%B2%E5%B0%86+img_url+%E8%AE%BE%E4%B8%BA%E7%B4%A2%E5%BC%95">
+            <span class="nowrap"><img src="./dot.gif" title="索引" alt="索引" class="icon ic_b_index"> 索引</span></a>
+            
+    </td>
+            <td align="center" class="spatial replaced_by_more" style="display: none;">
+        <span class="nowrap"><img src="./dot.gif" title="空间" alt="空间" class="icon ic_bd_spatial"> 空间</span>
+
+    </td>
+    
+    <td align="center" nowrap="nowrap" class="fulltext replaced_by_more" style="display: none;">
+        <a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60product%60+ADD+FULLTEXT%28%60img_url%60%29&amp;message_to_show=%E5%B7%B2%E5%B0%86+img_url+%E8%AE%BE%E4%B8%BA%E7%B4%A2%E5%BC%95">
+            <span class="nowrap"><img src="./dot.gif" title="全文搜索" alt="全文搜索" class="icon ic_b_ftext"> 全文搜索</span></a>
+                </td>
+            
+    <td class="more_opts" id="more_opts3" style="display: table-cell;">
+        <img src="./dot.gif" title="显示更多操作" alt="显示更多操作" class="icon ic_more"> 更多        <div class="structure_actions_dropdown" id="row_3" style="top: 173.688px; left: 860.688px;">
+
+            <div class="action_browse replace_in_more" style="display: none;">
+                <a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=SELECT+COUNT%28%2A%29+AS+%60%E8%A1%8C%E6%95%B0%60%2C+%60img_url%60+FROM+%60product%60+GROUP+BY+%60img_url%60+ORDER+BY+%60img_url%60">
+                    <span class="nowrap"><img src="./dot.gif" title="浏览非重复值 (DISTINCT)" alt="浏览非重复值 (DISTINCT)" class="icon ic_b_browse"> 浏览非重复值 (DISTINCT)</span>                </a>
+            </div>
+            <div class="action_primary replace_in_more" style="display: none;">
+                                          <a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60product%60+DROP+PRIMARY+KEY%2C+ADD+PRIMARY+KEY%28%60img_url%60%29&amp;message_to_show=%E5%B7%B2%E5%B0%86+img_url+%E8%AE%BE%E4%B8%BA%E4%B8%BB%E9%94%AE">
+                             <span class="nowrap"><img src="./dot.gif" title="添加主键" alt="添加主键" class="icon ic_b_primary"> 添加主键</span>                         </a>
+                                 </div>
+            <div class="action_unique replace_in_more" style="display: none;">
+                                         <a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60product%60+ADD+UNIQUE%28%60img_url%60%29&amp;message_to_show=%E5%B7%B2%E5%B0%86+img_url+%E8%AE%BE%E4%B8%BA%E7%B4%A2%E5%BC%95">
+                             <span class="nowrap"><img src="./dot.gif" title="添加唯一键" alt="添加唯一键" class="icon ic_b_unique"> 添加唯一键</span>                         </a>
+                                 </div>
+            <div class="action_index replace_in_more" style="">
+                                        <a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60product%60+ADD+INDEX%28%60img_url%60%29&amp;message_to_show=%E5%B7%B2%E5%B0%86+img_url+%E8%AE%BE%E4%B8%BA%E7%B4%A2%E5%BC%95">
+                             <span class="nowrap"><img src="./dot.gif" title="添加索引" alt="添加索引" class="icon ic_b_index"> 添加索引</span>                         </a>
+                                 </div>
+                        <div class="action_spatial replace_in_more" style="">
+                <span class="nowrap"><img src="./dot.gif" title="添加空间索引" alt="添加空间索引" class="icon ic_bd_spatial"> 添加空间索引</span>            </div>
+            <div class="action_fulltext replace_in_more" style="">
+                                         <a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60product%60+ADD+FULLTEXT%28%60img_url%60%29&amp;message_to_show=%E5%B7%B2%E5%B0%86+img_url+%E8%AE%BE%E4%B8%BA%E7%B4%A2%E5%BC%95">
+                             <span class="nowrap"><img src="./dot.gif" title="添加全文索引" alt="添加全文索引" class="icon ic_b_ftext"> 添加全文索引</span>                         </a>
+                                 </div>
+                    </div>
+    </td>
+    </tr>
+    
+<tr class="even">
+    <td align="center">
+        <input type="checkbox" name="selected_fld[]" value="total_number" id="checkbox_row_4">
+    </td>
+    <td align="right">
+        4    </td>
+    <th nowrap="nowrap"><label for="checkbox_row_4">total_number</label></th>
+    <td nowrap="nowrap"><bdo dir="ltr" xml:lang="en">int(4)</bdo></td>
+    <td></td>
+    <td nowrap="nowrap" class="column_attribute"> </td>
+    <td>否</td>
+    <td nowrap="nowrap"><i>无</i></td>
+    <td nowrap="nowrap"></td>
+        <td align="center" class="edit">
+        <a href="http://localhost:8090/phpMyAdmin/tbl_alter.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;field=total_number">
+            <span class="nowrap"><img src="./dot.gif" title="修改" alt="修改" class="icon ic_b_edit"> 修改</span></a>
+    </td>
+    <td align="center" class="drop">
+        <a class="drop_column_anchor" href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60product%60+DROP+%60total_number%60&amp;dropped_column=total_number&amp;message_to_show=%E5%B7%B2%E5%88%A0%E9%99%A4%E5%AD%97%E6%AE%B5+total_number">
+            <span class="nowrap"><img src="./dot.gif" title="删除" alt="删除" class="icon ic_b_drop"> 删除</span></a>
+    </td>
+        <td align="center" class="browse replaced_by_more">
+        <a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=SELECT+COUNT%28%2A%29+AS+%60%E8%A1%8C%E6%95%B0%60%2C+%60total_number%60+FROM+%60product%60+GROUP+BY+%60total_number%60+ORDER+BY+%60total_number%60">
+            <span class="nowrap"><img src="./dot.gif" title="浏览非重复值 (DISTINCT)" alt="浏览非重复值 (DISTINCT)" class="icon ic_b_browse"> 浏览非重复值 (DISTINCT)</span></a>
+    </td>
+        <td align="center" class="primary replaced_by_more">
+        
+        <a class="add_primary_key_anchor" href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60product%60+DROP+PRIMARY+KEY%2C+ADD+PRIMARY+KEY%28%60total_number%60%29&amp;message_to_show=%E5%B7%B2%E5%B0%86+total_number+%E8%AE%BE%E4%B8%BA%E4%B8%BB%E9%94%AE">
+            <span class="nowrap"><img src="./dot.gif" title="主键" alt="主键" class="icon ic_b_primary"> 主键</span></a>
+            
+    </td>
+    <td align="center" class="unique replaced_by_more">
+        
+        <a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60product%60+ADD+UNIQUE%28%60total_number%60%29&amp;message_to_show=%E5%B7%B2%E5%B0%86+total_number+%E8%AE%BE%E4%B8%BA%E7%B4%A2%E5%BC%95">
+            <span class="nowrap"><img src="./dot.gif" title="唯一" alt="唯一" class="icon ic_b_unique"> 唯一</span></a>
+            
+    </td>
+    <td align="center" class="index replaced_by_more" style="display: none;">
+        
+        <a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60product%60+ADD+INDEX%28%60total_number%60%29&amp;message_to_show=%E5%B7%B2%E5%B0%86+total_number+%E8%AE%BE%E4%B8%BA%E7%B4%A2%E5%BC%95">
+            <span class="nowrap"><img src="./dot.gif" title="索引" alt="索引" class="icon ic_b_index"> 索引</span></a>
+            
+    </td>
+            <td align="center" class="spatial replaced_by_more" style="display: none;">
+        <span class="nowrap"><img src="./dot.gif" title="空间" alt="空间" class="icon ic_bd_spatial"> 空间</span>
+
+    </td>
+    
+    <td align="center" nowrap="nowrap" class="fulltext replaced_by_more" style="display: none;">
+        <span class="nowrap"><img src="./dot.gif" title="全文搜索" alt="全文搜索" class="icon ic_bd_ftext"> 全文搜索</span>
+            </td>
+        
+    <td class="more_opts" id="more_opts4" style="display: table-cell;">
+        <img src="./dot.gif" title="显示更多操作" alt="显示更多操作" class="icon ic_more"> 更多        <div class="structure_actions_dropdown" id="row_4" style="top: 198.688px; left: 860.688px;">
+
+            <div class="action_browse replace_in_more" style="display: none;">
+                <a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=SELECT+COUNT%28%2A%29+AS+%60%E8%A1%8C%E6%95%B0%60%2C+%60total_number%60+FROM+%60product%60+GROUP+BY+%60total_number%60+ORDER+BY+%60total_number%60">
+                    <span class="nowrap"><img src="./dot.gif" title="浏览非重复值 (DISTINCT)" alt="浏览非重复值 (DISTINCT)" class="icon ic_b_browse"> 浏览非重复值 (DISTINCT)</span>                </a>
+            </div>
+            <div class="action_primary replace_in_more" style="display: none;">
+                                          <a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60product%60+DROP+PRIMARY+KEY%2C+ADD+PRIMARY+KEY%28%60total_number%60%29&amp;message_to_show=%E5%B7%B2%E5%B0%86+total_number+%E8%AE%BE%E4%B8%BA%E4%B8%BB%E9%94%AE">
+                             <span class="nowrap"><img src="./dot.gif" title="添加主键" alt="添加主键" class="icon ic_b_primary"> 添加主键</span>                         </a>
+                                 </div>
+            <div class="action_unique replace_in_more" style="display: none;">
+                                         <a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60product%60+ADD+UNIQUE%28%60total_number%60%29&amp;message_to_show=%E5%B7%B2%E5%B0%86+total_number+%E8%AE%BE%E4%B8%BA%E7%B4%A2%E5%BC%95">
+                             <span class="nowrap"><img src="./dot.gif" title="添加唯一键" alt="添加唯一键" class="icon ic_b_unique"> 添加唯一键</span>                         </a>
+                                 </div>
+            <div class="action_index replace_in_more" style="">
+                                        <a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60product%60+ADD+INDEX%28%60total_number%60%29&amp;message_to_show=%E5%B7%B2%E5%B0%86+total_number+%E8%AE%BE%E4%B8%BA%E7%B4%A2%E5%BC%95">
+                             <span class="nowrap"><img src="./dot.gif" title="添加索引" alt="添加索引" class="icon ic_b_index"> 添加索引</span>                         </a>
+                                 </div>
+                        <div class="action_spatial replace_in_more" style="">
+                <span class="nowrap"><img src="./dot.gif" title="添加空间索引" alt="添加空间索引" class="icon ic_bd_spatial"> 添加空间索引</span>            </div>
+            <div class="action_fulltext replace_in_more" style="">
+                <span class="nowrap"><img src="./dot.gif" title="添加全文索引" alt="添加全文索引" class="icon ic_bd_ftext"> 添加全文索引</span>            </div>
+                    </div>
+    </td>
+    </tr>
+    
+<tr class="odd">
+    <td align="center">
+        <input type="checkbox" name="selected_fld[]" value="price" id="checkbox_row_5">
+    </td>
+    <td align="right">
+        5    </td>
+    <th nowrap="nowrap"><label for="checkbox_row_5">price</label></th>
+    <td nowrap="nowrap"><bdo dir="ltr" xml:lang="en">varchar(20)</bdo></td>
+    <td><dfn title="Unicode (多语言), 不区分大小写">utf8_general_ci</dfn></td>
+    <td nowrap="nowrap" class="column_attribute"> </td>
+    <td>否</td>
+    <td nowrap="nowrap"><i>无</i></td>
+    <td nowrap="nowrap"></td>
+        <td align="center" class="edit">
+        <a href="http://localhost:8090/phpMyAdmin/tbl_alter.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;field=price">
+            <span class="nowrap"><img src="./dot.gif" title="修改" alt="修改" class="icon ic_b_edit"> 修改</span></a>
+    </td>
+    <td align="center" class="drop">
+        <a class="drop_column_anchor" href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60product%60+DROP+%60price%60&amp;dropped_column=price&amp;message_to_show=%E5%B7%B2%E5%88%A0%E9%99%A4%E5%AD%97%E6%AE%B5+price">
+            <span class="nowrap"><img src="./dot.gif" title="删除" alt="删除" class="icon ic_b_drop"> 删除</span></a>
+    </td>
+        <td align="center" class="browse replaced_by_more">
+        <a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=SELECT+COUNT%28%2A%29+AS+%60%E8%A1%8C%E6%95%B0%60%2C+%60price%60+FROM+%60product%60+GROUP+BY+%60price%60+ORDER+BY+%60price%60">
+            <span class="nowrap"><img src="./dot.gif" title="浏览非重复值 (DISTINCT)" alt="浏览非重复值 (DISTINCT)" class="icon ic_b_browse"> 浏览非重复值 (DISTINCT)</span></a>
+    </td>
+        <td align="center" class="primary replaced_by_more">
+        
+        <a class="add_primary_key_anchor" href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60product%60+DROP+PRIMARY+KEY%2C+ADD+PRIMARY+KEY%28%60price%60%29&amp;message_to_show=%E5%B7%B2%E5%B0%86+price+%E8%AE%BE%E4%B8%BA%E4%B8%BB%E9%94%AE">
+            <span class="nowrap"><img src="./dot.gif" title="主键" alt="主键" class="icon ic_b_primary"> 主键</span></a>
+            
+    </td>
+    <td align="center" class="unique replaced_by_more">
+        
+        <a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60product%60+ADD+UNIQUE%28%60price%60%29&amp;message_to_show=%E5%B7%B2%E5%B0%86+price+%E8%AE%BE%E4%B8%BA%E7%B4%A2%E5%BC%95">
+            <span class="nowrap"><img src="./dot.gif" title="唯一" alt="唯一" class="icon ic_b_unique"> 唯一</span></a>
+            
+    </td>
+    <td align="center" class="index replaced_by_more" style="display: none;">
+        
+        <a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60product%60+ADD+INDEX%28%60price%60%29&amp;message_to_show=%E5%B7%B2%E5%B0%86+price+%E8%AE%BE%E4%B8%BA%E7%B4%A2%E5%BC%95">
+            <span class="nowrap"><img src="./dot.gif" title="索引" alt="索引" class="icon ic_b_index"> 索引</span></a>
+            
+    </td>
+            <td align="center" class="spatial replaced_by_more" style="display: none;">
+        <span class="nowrap"><img src="./dot.gif" title="空间" alt="空间" class="icon ic_bd_spatial"> 空间</span>
+
+    </td>
+    
+    <td align="center" nowrap="nowrap" class="fulltext replaced_by_more" style="display: none;">
+        <a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60product%60+ADD+FULLTEXT%28%60price%60%29&amp;message_to_show=%E5%B7%B2%E5%B0%86+price+%E8%AE%BE%E4%B8%BA%E7%B4%A2%E5%BC%95">
+            <span class="nowrap"><img src="./dot.gif" title="全文搜索" alt="全文搜索" class="icon ic_b_ftext"> 全文搜索</span></a>
+                </td>
+            
+    <td class="more_opts" id="more_opts5" style="display: table-cell;">
+        <img src="./dot.gif" title="显示更多操作" alt="显示更多操作" class="icon ic_more"> 更多        <div class="structure_actions_dropdown" id="row_5" style="top: 223.688px; left: 860.688px;">
+
+            <div class="action_browse replace_in_more" style="display: none;">
+                <a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=SELECT+COUNT%28%2A%29+AS+%60%E8%A1%8C%E6%95%B0%60%2C+%60price%60+FROM+%60product%60+GROUP+BY+%60price%60+ORDER+BY+%60price%60">
+                    <span class="nowrap"><img src="./dot.gif" title="浏览非重复值 (DISTINCT)" alt="浏览非重复值 (DISTINCT)" class="icon ic_b_browse"> 浏览非重复值 (DISTINCT)</span>                </a>
+            </div>
+            <div class="action_primary replace_in_more" style="display: none;">
+                                          <a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60product%60+DROP+PRIMARY+KEY%2C+ADD+PRIMARY+KEY%28%60price%60%29&amp;message_to_show=%E5%B7%B2%E5%B0%86+price+%E8%AE%BE%E4%B8%BA%E4%B8%BB%E9%94%AE">
+                             <span class="nowrap"><img src="./dot.gif" title="添加主键" alt="添加主键" class="icon ic_b_primary"> 添加主键</span>                         </a>
+                                 </div>
+            <div class="action_unique replace_in_more" style="display: none;">
+                                         <a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60product%60+ADD+UNIQUE%28%60price%60%29&amp;message_to_show=%E5%B7%B2%E5%B0%86+price+%E8%AE%BE%E4%B8%BA%E7%B4%A2%E5%BC%95">
+                             <span class="nowrap"><img src="./dot.gif" title="添加唯一键" alt="添加唯一键" class="icon ic_b_unique"> 添加唯一键</span>                         </a>
+                                 </div>
+            <div class="action_index replace_in_more" style="">
+                                        <a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60product%60+ADD+INDEX%28%60price%60%29&amp;message_to_show=%E5%B7%B2%E5%B0%86+price+%E8%AE%BE%E4%B8%BA%E7%B4%A2%E5%BC%95">
+                             <span class="nowrap"><img src="./dot.gif" title="添加索引" alt="添加索引" class="icon ic_b_index"> 添加索引</span>                         </a>
+                                 </div>
+                        <div class="action_spatial replace_in_more" style="">
+                <span class="nowrap"><img src="./dot.gif" title="添加空间索引" alt="添加空间索引" class="icon ic_bd_spatial"> 添加空间索引</span>            </div>
+            <div class="action_fulltext replace_in_more" style="">
+                                         <a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60product%60+ADD+FULLTEXT%28%60price%60%29&amp;message_to_show=%E5%B7%B2%E5%B0%86+price+%E8%AE%BE%E4%B8%BA%E7%B4%A2%E5%BC%95">
+                             <span class="nowrap"><img src="./dot.gif" title="添加全文索引" alt="添加全文索引" class="icon ic_b_ftext"> 添加全文索引</span>                         </a>
+                                 </div>
+                    </div>
+    </td>
+    </tr>
+    
+<tr class="even">
+    <td align="center">
+        <input type="checkbox" name="selected_fld[]" value="class_id" id="checkbox_row_6">
+    </td>
+    <td align="right">
+        6    </td>
+    <th nowrap="nowrap"><label for="checkbox_row_6">class_id</label></th>
+    <td nowrap="nowrap"><bdo dir="ltr" xml:lang="en">int(4)</bdo></td>
+    <td></td>
+    <td nowrap="nowrap" class="column_attribute"> </td>
+    <td>否</td>
+    <td nowrap="nowrap"><i>无</i></td>
+    <td nowrap="nowrap"></td>
+        <td align="center" class="edit">
+        <a href="http://localhost:8090/phpMyAdmin/tbl_alter.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;field=class_id">
+            <span class="nowrap"><img src="./dot.gif" title="修改" alt="修改" class="icon ic_b_edit"> 修改</span></a>
+    </td>
+    <td align="center" class="drop">
+        <a class="drop_column_anchor" href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60product%60+DROP+%60class_id%60&amp;dropped_column=class_id&amp;message_to_show=%E5%B7%B2%E5%88%A0%E9%99%A4%E5%AD%97%E6%AE%B5+class_id">
+            <span class="nowrap"><img src="./dot.gif" title="删除" alt="删除" class="icon ic_b_drop"> 删除</span></a>
+    </td>
+        <td align="center" class="browse replaced_by_more">
+        <a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=SELECT+COUNT%28%2A%29+AS+%60%E8%A1%8C%E6%95%B0%60%2C+%60class_id%60+FROM+%60product%60+GROUP+BY+%60class_id%60+ORDER+BY+%60class_id%60">
+            <span class="nowrap"><img src="./dot.gif" title="浏览非重复值 (DISTINCT)" alt="浏览非重复值 (DISTINCT)" class="icon ic_b_browse"> 浏览非重复值 (DISTINCT)</span></a>
+    </td>
+        <td align="center" class="primary replaced_by_more">
+        
+        <a class="add_primary_key_anchor" href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60product%60+DROP+PRIMARY+KEY%2C+ADD+PRIMARY+KEY%28%60class_id%60%29&amp;message_to_show=%E5%B7%B2%E5%B0%86+class_id+%E8%AE%BE%E4%B8%BA%E4%B8%BB%E9%94%AE">
+            <span class="nowrap"><img src="./dot.gif" title="主键" alt="主键" class="icon ic_b_primary"> 主键</span></a>
+            
+    </td>
+    <td align="center" class="unique replaced_by_more">
+        
+        <a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60product%60+ADD+UNIQUE%28%60class_id%60%29&amp;message_to_show=%E5%B7%B2%E5%B0%86+class_id+%E8%AE%BE%E4%B8%BA%E7%B4%A2%E5%BC%95">
+            <span class="nowrap"><img src="./dot.gif" title="唯一" alt="唯一" class="icon ic_b_unique"> 唯一</span></a>
+            
+    </td>
+    <td align="center" class="index replaced_by_more" style="display: none;">
+        
+        <a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60product%60+ADD+INDEX%28%60class_id%60%29&amp;message_to_show=%E5%B7%B2%E5%B0%86+class_id+%E8%AE%BE%E4%B8%BA%E7%B4%A2%E5%BC%95">
+            <span class="nowrap"><img src="./dot.gif" title="索引" alt="索引" class="icon ic_b_index"> 索引</span></a>
+            
+    </td>
+            <td align="center" class="spatial replaced_by_more" style="display: none;">
+        <span class="nowrap"><img src="./dot.gif" title="空间" alt="空间" class="icon ic_bd_spatial"> 空间</span>
+
+    </td>
+    
+    <td align="center" nowrap="nowrap" class="fulltext replaced_by_more" style="display: none;">
+        <span class="nowrap"><img src="./dot.gif" title="全文搜索" alt="全文搜索" class="icon ic_bd_ftext"> 全文搜索</span>
+            </td>
+        
+    <td class="more_opts" id="more_opts6" style="display: table-cell;">
+        <img src="./dot.gif" title="显示更多操作" alt="显示更多操作" class="icon ic_more"> 更多        <div class="structure_actions_dropdown" id="row_6" style="top: 248.688px; left: 860.688px;">
+
+            <div class="action_browse replace_in_more" style="display: none;">
+                <a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=SELECT+COUNT%28%2A%29+AS+%60%E8%A1%8C%E6%95%B0%60%2C+%60class_id%60+FROM+%60product%60+GROUP+BY+%60class_id%60+ORDER+BY+%60class_id%60">
+                    <span class="nowrap"><img src="./dot.gif" title="浏览非重复值 (DISTINCT)" alt="浏览非重复值 (DISTINCT)" class="icon ic_b_browse"> 浏览非重复值 (DISTINCT)</span>                </a>
+            </div>
+            <div class="action_primary replace_in_more" style="display: none;">
+                                          <a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60product%60+DROP+PRIMARY+KEY%2C+ADD+PRIMARY+KEY%28%60class_id%60%29&amp;message_to_show=%E5%B7%B2%E5%B0%86+class_id+%E8%AE%BE%E4%B8%BA%E4%B8%BB%E9%94%AE">
+                             <span class="nowrap"><img src="./dot.gif" title="添加主键" alt="添加主键" class="icon ic_b_primary"> 添加主键</span>                         </a>
+                                 </div>
+            <div class="action_unique replace_in_more" style="display: none;">
+                                         <a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60product%60+ADD+UNIQUE%28%60class_id%60%29&amp;message_to_show=%E5%B7%B2%E5%B0%86+class_id+%E8%AE%BE%E4%B8%BA%E7%B4%A2%E5%BC%95">
+                             <span class="nowrap"><img src="./dot.gif" title="添加唯一键" alt="添加唯一键" class="icon ic_b_unique"> 添加唯一键</span>                         </a>
+                                 </div>
+            <div class="action_index replace_in_more" style="">
+                                        <a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60product%60+ADD+INDEX%28%60class_id%60%29&amp;message_to_show=%E5%B7%B2%E5%B0%86+class_id+%E8%AE%BE%E4%B8%BA%E7%B4%A2%E5%BC%95">
+                             <span class="nowrap"><img src="./dot.gif" title="添加索引" alt="添加索引" class="icon ic_b_index"> 添加索引</span>                         </a>
+                                 </div>
+                        <div class="action_spatial replace_in_more" style="">
+                <span class="nowrap"><img src="./dot.gif" title="添加空间索引" alt="添加空间索引" class="icon ic_bd_spatial"> 添加空间索引</span>            </div>
+            <div class="action_fulltext replace_in_more" style="">
+                <span class="nowrap"><img src="./dot.gif" title="添加全文索引" alt="添加全文索引" class="icon ic_bd_ftext"> 添加全文索引</span>            </div>
+                    </div>
+    </td>
+    </tr>
+    
+<tr class="odd">
+    <td align="center">
+        <input type="checkbox" name="selected_fld[]" value="seller_number" id="checkbox_row_7">
+    </td>
+    <td align="right">
+        7    </td>
+    <th nowrap="nowrap"><label for="checkbox_row_7">seller_number</label></th>
+    <td nowrap="nowrap"><bdo dir="ltr" xml:lang="en">int(11)</bdo></td>
+    <td></td>
+    <td nowrap="nowrap" class="column_attribute"> </td>
+    <td>否</td>
+    <td nowrap="nowrap"><i>无</i></td>
+    <td nowrap="nowrap"></td>
+        <td align="center" class="edit">
+        <a href="http://localhost:8090/phpMyAdmin/tbl_alter.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;field=seller_number">
+            <span class="nowrap"><img src="./dot.gif" title="修改" alt="修改" class="icon ic_b_edit"> 修改</span></a>
+    </td>
+    <td align="center" class="drop">
+        <a class="drop_column_anchor" href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60product%60+DROP+%60seller_number%60&amp;dropped_column=seller_number&amp;message_to_show=%E5%B7%B2%E5%88%A0%E9%99%A4%E5%AD%97%E6%AE%B5+seller_number">
+            <span class="nowrap"><img src="./dot.gif" title="删除" alt="删除" class="icon ic_b_drop"> 删除</span></a>
+    </td>
+        <td align="center" class="browse replaced_by_more">
+        <a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=SELECT+COUNT%28%2A%29+AS+%60%E8%A1%8C%E6%95%B0%60%2C+%60seller_number%60+FROM+%60product%60+GROUP+BY+%60seller_number%60+ORDER+BY+%60seller_number%60">
+            <span class="nowrap"><img src="./dot.gif" title="浏览非重复值 (DISTINCT)" alt="浏览非重复值 (DISTINCT)" class="icon ic_b_browse"> 浏览非重复值 (DISTINCT)</span></a>
+    </td>
+        <td align="center" class="primary replaced_by_more">
+        
+        <a class="add_primary_key_anchor" href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60product%60+DROP+PRIMARY+KEY%2C+ADD+PRIMARY+KEY%28%60seller_number%60%29&amp;message_to_show=%E5%B7%B2%E5%B0%86+seller_number+%E8%AE%BE%E4%B8%BA%E4%B8%BB%E9%94%AE">
+            <span class="nowrap"><img src="./dot.gif" title="主键" alt="主键" class="icon ic_b_primary"> 主键</span></a>
+            
+    </td>
+    <td align="center" class="unique replaced_by_more">
+        
+        <a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60product%60+ADD+UNIQUE%28%60seller_number%60%29&amp;message_to_show=%E5%B7%B2%E5%B0%86+seller_number+%E8%AE%BE%E4%B8%BA%E7%B4%A2%E5%BC%95">
+            <span class="nowrap"><img src="./dot.gif" title="唯一" alt="唯一" class="icon ic_b_unique"> 唯一</span></a>
+            
+    </td>
+    <td align="center" class="index replaced_by_more" style="display: none;">
+        
+        <a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60product%60+ADD+INDEX%28%60seller_number%60%29&amp;message_to_show=%E5%B7%B2%E5%B0%86+seller_number+%E8%AE%BE%E4%B8%BA%E7%B4%A2%E5%BC%95">
+            <span class="nowrap"><img src="./dot.gif" title="索引" alt="索引" class="icon ic_b_index"> 索引</span></a>
+            
+    </td>
+            <td align="center" class="spatial replaced_by_more" style="display: none;">
+        <span class="nowrap"><img src="./dot.gif" title="空间" alt="空间" class="icon ic_bd_spatial"> 空间</span>
+
+    </td>
+    
+    <td align="center" nowrap="nowrap" class="fulltext replaced_by_more" style="display: none;">
+        <span class="nowrap"><img src="./dot.gif" title="全文搜索" alt="全文搜索" class="icon ic_bd_ftext"> 全文搜索</span>
+            </td>
+        
+    <td class="more_opts" id="more_opts7" style="display: table-cell;">
+        <img src="./dot.gif" title="显示更多操作" alt="显示更多操作" class="icon ic_more"> 更多        <div class="structure_actions_dropdown" id="row_7" style="top: 273.688px; left: 860.688px;">
+
+            <div class="action_browse replace_in_more" style="display: none;">
+                <a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=SELECT+COUNT%28%2A%29+AS+%60%E8%A1%8C%E6%95%B0%60%2C+%60seller_number%60+FROM+%60product%60+GROUP+BY+%60seller_number%60+ORDER+BY+%60seller_number%60">
+                    <span class="nowrap"><img src="./dot.gif" title="浏览非重复值 (DISTINCT)" alt="浏览非重复值 (DISTINCT)" class="icon ic_b_browse"> 浏览非重复值 (DISTINCT)</span>                </a>
+            </div>
+            <div class="action_primary replace_in_more" style="display: none;">
+                                          <a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60product%60+DROP+PRIMARY+KEY%2C+ADD+PRIMARY+KEY%28%60seller_number%60%29&amp;message_to_show=%E5%B7%B2%E5%B0%86+seller_number+%E8%AE%BE%E4%B8%BA%E4%B8%BB%E9%94%AE">
+                             <span class="nowrap"><img src="./dot.gif" title="添加主键" alt="添加主键" class="icon ic_b_primary"> 添加主键</span>                         </a>
+                                 </div>
+            <div class="action_unique replace_in_more" style="display: none;">
+                                         <a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60product%60+ADD+UNIQUE%28%60seller_number%60%29&amp;message_to_show=%E5%B7%B2%E5%B0%86+seller_number+%E8%AE%BE%E4%B8%BA%E7%B4%A2%E5%BC%95">
+                             <span class="nowrap"><img src="./dot.gif" title="添加唯一键" alt="添加唯一键" class="icon ic_b_unique"> 添加唯一键</span>                         </a>
+                                 </div>
+            <div class="action_index replace_in_more" style="">
+                                        <a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60product%60+ADD+INDEX%28%60seller_number%60%29&amp;message_to_show=%E5%B7%B2%E5%B0%86+seller_number+%E8%AE%BE%E4%B8%BA%E7%B4%A2%E5%BC%95">
+                             <span class="nowrap"><img src="./dot.gif" title="添加索引" alt="添加索引" class="icon ic_b_index"> 添加索引</span>                         </a>
+                                 </div>
+                        <div class="action_spatial replace_in_more" style="">
+                <span class="nowrap"><img src="./dot.gif" title="添加空间索引" alt="添加空间索引" class="icon ic_bd_spatial"> 添加空间索引</span>            </div>
+            <div class="action_fulltext replace_in_more" style="">
+                <span class="nowrap"><img src="./dot.gif" title="添加全文索引" alt="添加全文索引" class="icon ic_bd_ftext"> 添加全文索引</span>            </div>
+                    </div>
+    </td>
+    </tr>
+    
+<tr class="even">
+    <td align="center">
+        <input type="checkbox" name="selected_fld[]" value="desc" id="checkbox_row_8">
+    </td>
+    <td align="right">
+        8    </td>
+    <th nowrap="nowrap"><label for="checkbox_row_8">desc</label></th>
+    <td nowrap="nowrap"><bdo dir="ltr" xml:lang="en">text</bdo></td>
+    <td><dfn title="Unicode (多语言), 不区分大小写">utf8_general_ci</dfn></td>
+    <td nowrap="nowrap" class="column_attribute"> </td>
+    <td>否</td>
+    <td nowrap="nowrap"><i>无</i></td>
+    <td nowrap="nowrap"></td>
+        <td align="center" class="edit">
+        <a href="http://localhost:8090/phpMyAdmin/tbl_alter.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;field=desc">
+            <span class="nowrap"><img src="./dot.gif" title="修改" alt="修改" class="icon ic_b_edit"> 修改</span></a>
+    </td>
+    <td align="center" class="drop">
+        <a class="drop_column_anchor" href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60product%60+DROP+%60desc%60&amp;dropped_column=desc&amp;message_to_show=%E5%B7%B2%E5%88%A0%E9%99%A4%E5%AD%97%E6%AE%B5+desc">
+            <span class="nowrap"><img src="./dot.gif" title="删除" alt="删除" class="icon ic_b_drop"> 删除</span></a>
+    </td>
+        <td align="center" class="browse replaced_by_more">
+        <a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=SELECT+COUNT%28%2A%29+AS+%60%E8%A1%8C%E6%95%B0%60%2C+%60desc%60+FROM+%60product%60+GROUP+BY+%60desc%60+ORDER+BY+%60desc%60">
+            <span class="nowrap"><img src="./dot.gif" title="浏览非重复值 (DISTINCT)" alt="浏览非重复值 (DISTINCT)" class="icon ic_b_browse"> 浏览非重复值 (DISTINCT)</span></a>
+    </td>
+        <td align="center" class="primary replaced_by_more">
+        <span class="nowrap"><img src="./dot.gif" title="主键" alt="主键" class="icon ic_bd_primary"> 主键</span>
+
+    </td>
+    <td align="center" class="unique replaced_by_more">
+        <span class="nowrap"><img src="./dot.gif" title="唯一" alt="唯一" class="icon ic_bd_unique"> 唯一</span>
+
+    </td>
+    <td align="center" class="index replaced_by_more" style="display: none;">
+        <span class="nowrap"><img src="./dot.gif" title="索引" alt="索引" class="icon ic_bd_index"> 索引</span>
+
+    </td>
+            <td align="center" class="spatial replaced_by_more" style="display: none;">
+        <span class="nowrap"><img src="./dot.gif" title="空间" alt="空间" class="icon ic_bd_spatial"> 空间</span>
+
+    </td>
+    
+    <td align="center" nowrap="nowrap" class="fulltext replaced_by_more" style="display: none;">
+        <a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60product%60+ADD+FULLTEXT%28%60desc%60%29&amp;message_to_show=%E5%B7%B2%E5%B0%86+desc+%E8%AE%BE%E4%B8%BA%E7%B4%A2%E5%BC%95">
+            <span class="nowrap"><img src="./dot.gif" title="全文搜索" alt="全文搜索" class="icon ic_b_ftext"> 全文搜索</span></a>
+                </td>
+            
+    <td class="more_opts" id="more_opts8" style="display: table-cell;">
+        <img src="./dot.gif" title="显示更多操作" alt="显示更多操作" class="icon ic_more"> 更多        <div class="structure_actions_dropdown" id="row_8" style="top: 298.688px; left: 860.688px;">
+
+            <div class="action_browse replace_in_more" style="display: none;">
+                <a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=SELECT+COUNT%28%2A%29+AS+%60%E8%A1%8C%E6%95%B0%60%2C+%60desc%60+FROM+%60product%60+GROUP+BY+%60desc%60+ORDER+BY+%60desc%60">
+                    <span class="nowrap"><img src="./dot.gif" title="浏览非重复值 (DISTINCT)" alt="浏览非重复值 (DISTINCT)" class="icon ic_b_browse"> 浏览非重复值 (DISTINCT)</span>                </a>
+            </div>
+            <div class="action_primary replace_in_more" style="display: none;">
+                <span class="nowrap"><img src="./dot.gif" title="添加主键" alt="添加主键" class="icon ic_bd_primary"> 添加主键</span>            </div>
+            <div class="action_unique replace_in_more" style="display: none;">
+                <span class="nowrap"><img src="./dot.gif" title="添加唯一键" alt="添加唯一键" class="icon ic_bd_unique"> 添加唯一键</span>            </div>
+            <div class="action_index replace_in_more" style="">
+               <span class="nowrap"><img src="./dot.gif" title="添加索引" alt="添加索引" class="icon ic_bd_index"> 添加索引</span>            </div>
+                        <div class="action_spatial replace_in_more" style="">
+                <span class="nowrap"><img src="./dot.gif" title="添加空间索引" alt="添加空间索引" class="icon ic_bd_spatial"> 添加空间索引</span>            </div>
+            <div class="action_fulltext replace_in_more" style="">
+                                         <a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60product%60+ADD+FULLTEXT%28%60desc%60%29&amp;message_to_show=%E5%B7%B2%E5%B0%86+desc+%E8%AE%BE%E4%B8%BA%E7%B4%A2%E5%BC%95">
+                             <span class="nowrap"><img src="./dot.gif" title="添加全文索引" alt="添加全文索引" class="icon ic_b_ftext"> 添加全文索引</span>                         </a>
+                                 </div>
+                    </div>
+    </td>
+    </tr>
+    
+<tr class="odd">
+    <td align="center">
+        <input type="checkbox" name="selected_fld[]" value="img-list" id="checkbox_row_9">
+    </td>
+    <td align="right">
+        9    </td>
+    <th nowrap="nowrap"><label for="checkbox_row_9">img-list</label></th>
+    <td nowrap="nowrap"><bdo dir="ltr" xml:lang="en">text</bdo></td>
+    <td><dfn title="Unicode (多语言), 不区分大小写">utf8_general_ci</dfn></td>
+    <td nowrap="nowrap" class="column_attribute"> </td>
+    <td>否</td>
+    <td nowrap="nowrap"><i>无</i></td>
+    <td nowrap="nowrap"></td>
+        <td align="center" class="edit">
+        <a href="http://localhost:8090/phpMyAdmin/tbl_alter.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;field=img-list">
+            <span class="nowrap"><img src="./dot.gif" title="修改" alt="修改" class="icon ic_b_edit"> 修改</span></a>
+    </td>
+    <td align="center" class="drop">
+        <a class="drop_column_anchor" href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60product%60+DROP+%60img-list%60&amp;dropped_column=img-list&amp;message_to_show=%E5%B7%B2%E5%88%A0%E9%99%A4%E5%AD%97%E6%AE%B5+img-list">
+            <span class="nowrap"><img src="./dot.gif" title="删除" alt="删除" class="icon ic_b_drop"> 删除</span></a>
+    </td>
+        <td align="center" class="browse replaced_by_more">
+        <a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=SELECT+COUNT%28%2A%29+AS+%60%E8%A1%8C%E6%95%B0%60%2C+%60img-list%60+FROM+%60product%60+GROUP+BY+%60img-list%60+ORDER+BY+%60img-list%60">
+            <span class="nowrap"><img src="./dot.gif" title="浏览非重复值 (DISTINCT)" alt="浏览非重复值 (DISTINCT)" class="icon ic_b_browse"> 浏览非重复值 (DISTINCT)</span></a>
+    </td>
+        <td align="center" class="primary replaced_by_more">
+        <span class="nowrap"><img src="./dot.gif" title="主键" alt="主键" class="icon ic_bd_primary"> 主键</span>
+
+    </td>
+    <td align="center" class="unique replaced_by_more">
+        <span class="nowrap"><img src="./dot.gif" title="唯一" alt="唯一" class="icon ic_bd_unique"> 唯一</span>
+
+    </td>
+    <td align="center" class="index replaced_by_more" style="display: none;">
+        <span class="nowrap"><img src="./dot.gif" title="索引" alt="索引" class="icon ic_bd_index"> 索引</span>
+
+    </td>
+            <td align="center" class="spatial replaced_by_more" style="display: none;">
+        <span class="nowrap"><img src="./dot.gif" title="空间" alt="空间" class="icon ic_bd_spatial"> 空间</span>
+
+    </td>
+    
+    <td align="center" nowrap="nowrap" class="fulltext replaced_by_more" style="display: none;">
+        <a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60product%60+ADD+FULLTEXT%28%60img-list%60%29&amp;message_to_show=%E5%B7%B2%E5%B0%86+img-list+%E8%AE%BE%E4%B8%BA%E7%B4%A2%E5%BC%95">
+            <span class="nowrap"><img src="./dot.gif" title="全文搜索" alt="全文搜索" class="icon ic_b_ftext"> 全文搜索</span></a>
+                </td>
+            
+    <td class="more_opts" id="more_opts9" style="display: table-cell;">
+        <img src="./dot.gif" title="显示更多操作" alt="显示更多操作" class="icon ic_more"> 更多        <div class="structure_actions_dropdown" id="row_9" style="top: 323.688px; left: 860.688px;">
+
+            <div class="action_browse replace_in_more" style="display: none;">
+                <a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=SELECT+COUNT%28%2A%29+AS+%60%E8%A1%8C%E6%95%B0%60%2C+%60img-list%60+FROM+%60product%60+GROUP+BY+%60img-list%60+ORDER+BY+%60img-list%60">
+                    <span class="nowrap"><img src="./dot.gif" title="浏览非重复值 (DISTINCT)" alt="浏览非重复值 (DISTINCT)" class="icon ic_b_browse"> 浏览非重复值 (DISTINCT)</span>                </a>
+            </div>
+            <div class="action_primary replace_in_more" style="display: none;">
+                <span class="nowrap"><img src="./dot.gif" title="添加主键" alt="添加主键" class="icon ic_bd_primary"> 添加主键</span>            </div>
+            <div class="action_unique replace_in_more" style="display: none;">
+                <span class="nowrap"><img src="./dot.gif" title="添加唯一键" alt="添加唯一键" class="icon ic_bd_unique"> 添加唯一键</span>            </div>
+            <div class="action_index replace_in_more" style="">
+               <span class="nowrap"><img src="./dot.gif" title="添加索引" alt="添加索引" class="icon ic_bd_index"> 添加索引</span>            </div>
+                        <div class="action_spatial replace_in_more" style="">
+                <span class="nowrap"><img src="./dot.gif" title="添加空间索引" alt="添加空间索引" class="icon ic_bd_spatial"> 添加空间索引</span>            </div>
+            <div class="action_fulltext replace_in_more" style="">
+                                         <a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;sql_query=ALTER+TABLE+%60product%60+ADD+FULLTEXT%28%60img-list%60%29&amp;message_to_show=%E5%B7%B2%E5%B0%86+img-list+%E8%AE%BE%E4%B8%BA%E7%B4%A2%E5%BC%95">
+                             <span class="nowrap"><img src="./dot.gif" title="添加全文索引" alt="添加全文索引" class="icon ic_b_ftext"> 添加全文索引</span>                         </a>
+                                 </div>
+                    </div>
+    </td>
+    </tr>
+    </tbody>
+</table>
+
+<img class="selectallarrow" src="./arrow_ltr.png" width="38" height="22" alt="选中项：">
+<a href="http://localhost:8090/phpMyAdmin/tbl_structure.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;checkall=1" onclick="if (markAllRows(&#39;fieldsForm&#39;)) return false;">
+    全选</a>
+/
+<a href="http://localhost:8090/phpMyAdmin/tbl_structure.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975" onclick="if (unMarkAllRows(&#39;fieldsForm&#39;)) return false;">
+    全不选</a>
+
+<i>选中项：</i>
+
+<button class="mult_submit" type="submit" name="submit_mult" value="browse" title="浏览">
+<span class="nowrap"><img src="./dot.gif" title="浏览" alt="浏览" class="icon ic_b_browse"> 浏览</span></button>
+<button class="mult_submit" type="submit" name="submit_mult" value="change" title="修改">
+<span class="nowrap"><img src="./dot.gif" title="修改" alt="修改" class="icon ic_b_edit"> 修改</span></button>
+<button class="mult_submit" type="submit" name="submit_mult" value="drop" title="删除">
+<span class="nowrap"><img src="./dot.gif" title="删除" alt="删除" class="icon ic_b_drop"> 删除</span></button>
+<button class="mult_submit" type="submit" name="submit_mult" value="primary" title="主键">
+<span class="nowrap"><img src="./dot.gif" title="主键" alt="主键" class="icon ic_b_primary"> 主键</span></button>
+<button class="mult_submit" type="submit" name="submit_mult" value="unique" title="唯一">
+<span class="nowrap"><img src="./dot.gif" title="唯一" alt="唯一" class="icon ic_b_unique"> 唯一</span></button>
+<button class="mult_submit" type="submit" name="submit_mult" value="index" title="索引">
+<span class="nowrap"><img src="./dot.gif" title="索引" alt="索引" class="icon ic_b_index"> 索引</span></button>
+<button class="mult_submit" type="submit" name="submit_mult" value="spatial" title="空间">
+<span class="nowrap"><img src="./dot.gif" title="空间" alt="空间" class="icon ic_b_spatial"> 空间</span></button>
+<button class="mult_submit" type="submit" name="submit_mult" value="ftext" title="全文搜索">
+<span class="nowrap"><img src="./dot.gif" title="全文搜索" alt="全文搜索" class="icon ic_b_ftext"> 全文搜索</span></button>
+</form>
+<hr>
+
+
+<a href="http://localhost:8090/phpMyAdmin/tbl_printview.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php"><span class="nowrap"><img src="./dot.gif" title="打印预览" alt="打印预览" class="icon ic_b_print"> 打印预览</span></a>
+
+<a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975&amp;goto=tbl_structure.php&amp;back=tbl_structure.php&amp;session_max_rows=all&amp;sql_query=SELECT+%2A+FROM+%60product%60+PROCEDURE+ANALYSE%28%29"><span class="nowrap"><img src="./dot.gif" title="规划表结构" alt="规划表结构" class="icon ic_b_tblanalyse"> 规划表结构</span></a><a href="http://localhost:8090/phpMyAdmin/url.php?url=http%3A%2F%2Fdev.mysql.com%2Fdoc%2Frefman%2F5.5%2Fen%2Fprocedure-analyse.html&amp;token=3962c389da5c79346da0da09fb38a975" target="mysql_doc"><img src="./dot.gif" title="文档" alt="文档" class="icon ic_b_help"></a>
+
+    <br>
+<form method="post" action="http://localhost:8090/phpMyAdmin/tbl_addfield.php" id="addColumns" name="addColumns" class="ajax" onsubmit="return checkFormElementInRange(this, &#39;num_fields&#39;, &#39;至少要添加一个字段。&#39;, 1)">
+    <input type="hidden" name="db" value="day1024"><input type="hidden" name="table" value="product"><input type="hidden" name="token" value="3962c389da5c79346da0da09fb38a975"><img src="./dot.gif" title="添加字段" alt="添加字段" class="icon ic_b_insrow">添加 <input type="text" name="num_fields" size="2" maxlength="2" value="1" onfocus="this.select()"> 个字段<input type="radio" name="field_where" id="field_where_last" value="last" checked="checked">
+<label for="field_where_last">于表结尾</label>
+<input type="radio" name="field_where" id="field_where_first" value="first">
+<label for="field_where_first">于表开头</label>
+<input type="radio" name="field_where" id="field_where_after" value="after">
+<label for="field_where_after">于  之后</label>
+<select name="after_field" onclick="this.form.field_where[2].checked=true" onchange="this.form.field_where[2].checked=true"><option value="p_id">p_id</option>
+<option value="p_name">p_name</option>
+<option value="img_url">img_url</option>
+<option value="total_number">total_number</option>
+<option value="price">price</option>
+<option value="class_id">class_id</option>
+<option value="seller_number">seller_number</option>
+<option value="desc">desc</option>
+<option value="img-list">img-list</option>
+</select><input type="submit" value="执行">
+</form>
+<iframe class="IE_hack" scrolling="no" style="width: 106px; height: 17px; top: 1587.93px; left: 1582.44px;" src="./saved_resource.html"></iframe>
+<hr>
+<div id="index_div" class="ajax">
+    <a href="http://localhost:8090/phpMyAdmin/tbl_structure.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975#indexes"><span>+ </span>索引</a><div class="slide-wrapper" style="display: none;"><div id="indexes" style="display: none; overflow:auto;" class="pma_auto_slider slider_init_done" title="索引">
+    <fieldset><legend id="index_header">索引<a href="http://localhost:8090/phpMyAdmin/url.php?url=http%3A%2F%2Fdev.mysql.com%2Fdoc%2Frefman%2F5.5%2Fen%2Foptimizing-database-structure.html&amp;token=3962c389da5c79346da0da09fb38a975" target="mysql_doc"><img src="./dot.gif" title="文档" alt="文档" class="icon ic_b_help"></a></legend><div class="no_indexes_defined hide"><div class="notice">没有已定义的索引！</div></div><table id="table_index"><thead><tr><th colspan="2">操作</th><th>键名</th><th>类型</th><th>唯一</th><th>紧凑</th><th>字段</th><th>基数</th><th>整理</th><th>空</th><th>注释</th></tr></thead><tbody><tr class="noclick odd"><td class="edit_index ajax" "="" rowspan="1">    <a href="http://localhost:8090/phpMyAdmin/tbl_indexes.php?db=day1024&amp;table=product&amp;index=PRIMARY&amp;token=3962c389da5c79346da0da09fb38a975"><span class="nowrap"><img src="./dot.gif" title="编辑" alt="编辑" class="icon ic_b_edit"> 编辑</span></a></td>
+<td rowspan="1"><input type="hidden" class="drop_primary_key_index_msg" value="`ALTER TABLE product DROP PRIMARY KEY`">    <a class="drop_primary_key_index_anchor" href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;table=product&amp;sql_query=ALTER+TABLE+%60product%60+DROP+PRIMARY+KEY&amp;message_to_show=%E5%B7%B2%E5%88%A0%E9%99%A4%E4%B8%BB%E9%94%AE&amp;token=3962c389da5c79346da0da09fb38a975"><span class="nowrap"><img src="./dot.gif" title="删除" alt="删除" class="icon ic_b_drop"> 删除</span></a></td>
+<th rowspan="1">PRIMARY</th><td rowspan="1">BTREE</td><td rowspan="1">是</td><td rowspan="1">否</td><td>p_id</td><td>10</td><td>A</td><td>否</td><td rowspan="1"></td></tr></tbody></table></fieldset>        <fieldset class="tblFooters" style="text-align: left;">
+            <form action="http://localhost:8090/phpMyAdmin/tbl_indexes.php" method="post">
+                <input type="hidden" name="db" value="day1024"><input type="hidden" name="table" value="product"><input type="hidden" name="token" value="3962c389da5c79346da0da09fb38a975">在第 <input type="text" size="2" name="added_fields" value="1"> 个字段创建索引                <input type="hidden" name="create_index" value="1">
+                <input class="add_index ajax" type="submit" value="执行">
+            </form>
+        </fieldset>
+    </div></div>
+</div>
+    <div id="tablestatistics">
+    <fieldset>
+    <legend>信息</legend>
+    <a name="showusage"></a>
+        <table id="tablespaceusage" class="data">
+    <caption class="tblHeaders">已用空间</caption>
+    <tbody>
+    <tr class="odd">
+        <th class="name">数据</th>
+        <td class="value">2.3</td>
+        <td class="unit">KB</td>
+    </tr>
+            <tr class="even">
+        <th class="name">索引</th>
+        <td class="value">2</td>
+        <td class="unit">KB</td>
+    </tr>
+                <tr class="odd">
+        <th class="name">总计</th>
+        <td class="value">4.3</td>
+        <td class="unit">KB</td>
+    </tr>
+                </tbody>
+    </table>
+            <table id="tablerowstats" class="data">
+    <caption class="tblHeaders">行统计</caption>
+    <tbody>
+        <tr class="odd">
+        <th class="name">格式</th>
+        <td class="value">动态</td>
+    </tr>
+            <tr class="even">
+        <th class="name">整理</th>
+        <td class="value"><dfn title="Unicode (多语言), 不区分大小写">utf8_general_ci</dfn></td>
+    </tr>
+            <tr class="odd">
+        <th class="name">行数</th>
+        <td class="value">10</td>
+    </tr>
+            <tr class="even">
+        <th class="name">行长度 ø</th>
+        <td class="value">230</td>
+    </tr>
+            <tr class="odd">
+        <th class="name">行大小 ø</th>
+        <td class="value">436 字节</td>
+    </tr>
+            <tr class="even">
+        <th class="name">下一个自增值</th>
+        <td class="value">11</td>
+    </tr>
+            <tr class="odd">
+        <th class="name">创建时间</th>
+        <td class="value">2017 年 11 月 01 日 11:39</td>
+    </tr>
+            <tr class="even">
+        <th class="name">最后更新</th>
+        <td class="value">2017 年 11 月 01 日 11:43</td>
+    </tr>
+            </tbody>
+    </table>
+    </fieldset>
+    <!-- close tablestatistics div -->
+    </div>
+
+    <div class="clearfloat"></div>
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function() {
+// updates current settings
+if (window.parent.setAll) {
+    window.parent.setAll('zh_CN', '', '1', 'day1024', 'product', '3962c389da5c79346da0da09fb38a975');
+}
+    // set current db, table and sql query in the querywindow
+if (window.parent.reload_querywindow) {
+    window.parent.reload_querywindow(
+        'day1024',
+        'product',
+        '');
+}
+    
+if (window.parent.frame_content) {
+    // reset content frame name, as querywindow needs to set a unique name
+    // before submitting form data, and navigation frame needs the original name
+    if (typeof(window.parent.frame_content.name) != 'undefined'
+     && window.parent.frame_content.name != 'frame_content') {
+        window.parent.frame_content.name = 'frame_content';
+    }
+    if (typeof(window.parent.frame_content.id) != 'undefined'
+     && window.parent.frame_content.id != 'frame_content') {
+        window.parent.frame_content.id = 'frame_content';
+    }
+    //window.parent.frame_content.setAttribute('name', 'frame_content');
+    //window.parent.frame_content.setAttribute('id', 'frame_content');
+}
+});
+
+//]]>
+</script>
+<div id="selflink" class="print_ignore">
+<script type="text/javascript">
+//<![CDATA[
+
+/* Store current location in hash part of URL to allow direct bookmarking */
+setURLHash("db=day1024&table=product&target=tbl_structure.php&token=3962c389da5c79346da0da09fb38a975");
+
+//]]>
+</script>
+<a href="http://localhost:8090/phpMyAdmin/index.php?db=day1024&amp;table=product&amp;target=tbl_structure.php&amp;token=3962c389da5c79346da0da09fb38a975" title="打开新 phpMyAdmin 窗口" target="_blank"><img src="./dot.gif" title="打开新 phpMyAdmin 窗口" alt="打开新 phpMyAdmin 窗口" class="icon ic_window-new"></a>
+</div>
+
+
+<div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-draggable ui-resizable" tabindex="-1" role="dialog" aria-labelledby="ui-dialog-title-change_column_dialog" style="display: block; z-index: 1002; outline: 0px; position: absolute; height: auto; width: 900px; top: 12px; left: 34px;"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span class="ui-dialog-title" id="ui-dialog-title-change_column_dialog">修改</span><a href="http://localhost:8090/phpMyAdmin/tbl_structure.php?db=day1024&amp;table=product&amp;token=3962c389da5c79346da0da09fb38a975#" class="ui-dialog-titlebar-close ui-corner-all" role="button"><span class="ui-icon ui-icon-closethick">close</span></a></div><div id="change_column_dialog" class="ui-dialog-content ui-widget-content" scrolltop="0" scrollleft="0" style="width: auto; min-height: 0px; height: 493.248px;">
+
+
+    <form id="append_fields_form" method="post" action="http://localhost:8090/phpMyAdmin/tbl_alter.php" class="ajax">
+<input type="hidden" name="db" value="day1024"><input type="hidden" name="table" value="product"><input type="hidden" name="orig_num_fields" value="1"><input type="hidden" name="selected[0]" value="img-list"><input type="hidden" name="true_selected[0]" value="img-list"><input type="hidden" name="field_orig[0]" value="img-list"><input type="hidden" name="field_length_orig[0]" value=""><input type="hidden" name="field_default_orig[0]" value=""><input type="hidden" name="token" value="3962c389da5c79346da0da09fb38a975"><table id="table_columns" class="noclick"><caption class="tblHeaders">结构<a href="http://localhost:8090/phpMyAdmin/url.php?url=http%3A%2F%2Fdev.mysql.com%2Fdoc%2Frefman%2F5.5%2Fen%2Fcreate-table.html&amp;token=3962c389da5c79346da0da09fb38a975" target="mysql_doc"><img src="./dot.gif" title="文档" alt="文档" class="icon ic_b_help"></a></caption><tbody><tr>
+        <th>名字</th>
+        <th>类型<a href="http://localhost:8090/phpMyAdmin/url.php?url=http%3A%2F%2Fdev.mysql.com%2Fdoc%2Frefman%2F5.5%2Fen%2Fdata-types.html&amp;token=3962c389da5c79346da0da09fb38a975" target="mysql_doc"><img src="./dot.gif" title="文档" alt="文档" class="icon ic_b_help"></a></th>
+        <th>长度/值<sup class="footnotemarker" style="display: none;">1</sup><img src="./dot.gif" title="" alt="" class="icon ic_b_help footnotemarker footnote_1" style="display: inline;"></th>
+        <th>默认<sup class="footnotemarker" style="display: none;">2</sup><img src="./dot.gif" title="" alt="" class="icon ic_b_help footnotemarker footnote_2" style="display: inline;"></th>
+        <th>整理</th>
+        <th>属性</th>
+        <th>空</th>
+        <th><abbr title="AUTO_INCREMENT">A_I</abbr></th>
+        <th>注释</th>
+    </tr>
+    <tr class="odd">    <td align="center"><input id="field_0_1" type="text" name="field_name[0]" maxlength="64" class="textfield" title="字段" size="10" value="img-list"></td>
+                    <td align="center"><select class="column_type" name="field_type[0]" id="field_0_2"><option>INT</option><option>VARCHAR</option><option selected="selected">TEXT</option><option>DATE</option><optgroup label="NUMERIC"><option>TINYINT</option><option>SMALLINT</option><option>MEDIUMINT</option><option>INT</option><option>BIGINT</option><option disabled="disabled">-</option><option>DECIMAL</option><option>FLOAT</option><option>DOUBLE</option><option>REAL</option><option disabled="disabled">-</option><option>BIT</option><option>BOOLEAN</option><option>SERIAL</option></optgroup><optgroup label="DATE and TIME"><option>DATE</option><option>DATETIME</option><option>TIMESTAMP</option><option>TIME</option><option>YEAR</option></optgroup><optgroup label="STRING"><option>CHAR</option><option>VARCHAR</option><option disabled="disabled">-</option><option>TINYTEXT</option><option selected="selected">TEXT</option><option>MEDIUMTEXT</option><option>LONGTEXT</option><option disabled="disabled">-</option><option>BINARY</option><option>VARBINARY</option><option disabled="disabled">-</option><option>TINYBLOB</option><option>MEDIUMBLOB</option><option>BLOB</option><option>LONGBLOB</option><option disabled="disabled">-</option><option>ENUM</option><option>SET</option></optgroup><optgroup label="SPATIAL"><option>GEOMETRY</option><option>POINT</option><option>LINESTRING</option><option>POLYGON</option><option>MULTIPOINT</option><option>MULTILINESTRING</option><option>MULTIPOLYGON</option><option>GEOMETRYCOLLECTION</option></optgroup>    </select></td>
+                    <td align="center"><input id="field_0_3" type="text" name="field_length[0]" size="8" value="" class="textfield"><p class="enum_notice" id="enum_notice_0_3" style="display: none;">ENUM 或 SET 数据过长？<a onclick="return false;" href="http://localhost:8090/phpMyAdmin/enum_editor.php?token=3962c389da5c79346da0da09fb38a975&amp;values=&amp;field=img-list" class="open_enum_editor" target="_blank"> 获取更多编辑空间</a></p></td>
+                    <td align="center"><select name="field_default_type[0]" id="field_0_4" class="default_type"><option value="NONE" selected="selected">无</option><option value="USER_DEFINED">定义：</option><option value="NULL">NULL</option><option value="CURRENT_TIMESTAMP">CURRENT_TIMESTAMP</option></select><br><input type="text" name="field_default_value[0]" size="12" value="" class="textfield default_value" style="display: none;"></td>
+                    <td align="center"><select xml:lang="en" dir="ltr" name="field_collation[0]" id="field_0_5">
+<option value=""></option>
+<optgroup label="armscii8" title="ARMSCII-8 Armenian">
+<option value="armscii8_bin" title="亚美尼亚语, 二进制">armscii8_bin</option>
+<option value="armscii8_general_ci" title="亚美尼亚语, 不区分大小写">armscii8_general_ci</option>
+</optgroup>
+<optgroup label="ascii" title="US ASCII">
+<option value="ascii_bin" title="西欧 (多语言), 二进制">ascii_bin</option>
+<option value="ascii_general_ci" title="西欧 (多语言), 不区分大小写">ascii_general_ci</option>
+</optgroup>
+<optgroup label="big5" title="Big5 Traditional Chinese">
+<option value="big5_bin" title="正体中文, 二进制">big5_bin</option>
+<option value="big5_chinese_ci" title="正体中文, 不区分大小写">big5_chinese_ci</option>
+</optgroup>
+<optgroup label="binary" title="Binary pseudo charset">
+<option value="binary" title="二进制">binary</option>
+</optgroup>
+<optgroup label="cp1250" title="Windows Central European">
+<option value="cp1250_bin" title="中欧 (多语言), 二进制">cp1250_bin</option>
+<option value="cp1250_croatian_ci" title="克罗地亚语, 不区分大小写">cp1250_croatian_ci</option>
+<option value="cp1250_czech_cs" title="捷克语, 区分大小写">cp1250_czech_cs</option>
+<option value="cp1250_general_ci" title="中欧 (多语言), 不区分大小写">cp1250_general_ci</option>
+<option value="cp1250_polish_ci" title="波兰语, 不区分大小写">cp1250_polish_ci</option>
+</optgroup>
+<optgroup label="cp1251" title="Windows Cyrillic">
+<option value="cp1251_bin" title="西里尔语 (多语言), 二进制">cp1251_bin</option>
+<option value="cp1251_bulgarian_ci" title="保加利亚语, 不区分大小写">cp1251_bulgarian_ci</option>
+<option value="cp1251_general_ci" title="西里尔语 (多语言), 不区分大小写">cp1251_general_ci</option>
+<option value="cp1251_general_cs" title="西里尔语 (多语言), 区分大小写">cp1251_general_cs</option>
+<option value="cp1251_ukrainian_ci" title="乌克兰语, 不区分大小写">cp1251_ukrainian_ci</option>
+</optgroup>
+<optgroup label="cp1256" title="Windows Arabic">
+<option value="cp1256_bin" title="阿拉伯语, 二进制">cp1256_bin</option>
+<option value="cp1256_general_ci" title="阿拉伯语, 不区分大小写">cp1256_general_ci</option>
+</optgroup>
+<optgroup label="cp1257" title="Windows Baltic">
+<option value="cp1257_bin" title="巴拉克语 (多语言), 二进制">cp1257_bin</option>
+<option value="cp1257_general_ci" title="巴拉克语 (多语言), 不区分大小写">cp1257_general_ci</option>
+<option value="cp1257_lithuanian_ci" title="立陶宛语, 不区分大小写">cp1257_lithuanian_ci</option>
+</optgroup>
+<optgroup label="cp850" title="DOS West European">
+<option value="cp850_bin" title="西欧 (多语言), 二进制">cp850_bin</option>
+<option value="cp850_general_ci" title="西欧 (多语言), 不区分大小写">cp850_general_ci</option>
+</optgroup>
+<optgroup label="cp852" title="DOS Central European">
+<option value="cp852_bin" title="中欧 (多语言), 二进制">cp852_bin</option>
+<option value="cp852_general_ci" title="中欧 (多语言), 不区分大小写">cp852_general_ci</option>
+</optgroup>
+<optgroup label="cp866" title="DOS Russian">
+<option value="cp866_bin" title="俄语, 二进制">cp866_bin</option>
+<option value="cp866_general_ci" title="俄语, 不区分大小写">cp866_general_ci</option>
+</optgroup>
+<optgroup label="cp932" title="SJIS for Windows Japanese">
+<option value="cp932_bin" title="日语, 二进制">cp932_bin</option>
+<option value="cp932_japanese_ci" title="日语, 不区分大小写">cp932_japanese_ci</option>
+</optgroup>
+<optgroup label="dec8" title="DEC West European">
+<option value="dec8_bin" title="西欧 (多语言), 二进制">dec8_bin</option>
+<option value="dec8_swedish_ci" title="瑞典语, 不区分大小写">dec8_swedish_ci</option>
+</optgroup>
+<optgroup label="eucjpms" title="UJIS for Windows Japanese">
+<option value="eucjpms_bin" title="日语, 二进制">eucjpms_bin</option>
+<option value="eucjpms_japanese_ci" title="日语, 不区分大小写">eucjpms_japanese_ci</option>
+</optgroup>
+<optgroup label="euckr" title="EUC-KR Korean">
+<option value="euckr_bin" title="朝鲜语, 二进制">euckr_bin</option>
+<option value="euckr_korean_ci" title="朝鲜语, 不区分大小写">euckr_korean_ci</option>
+</optgroup>
+<optgroup label="gb2312" title="GB2312 Simplified Chinese">
+<option value="gb2312_bin" title="简体中文, 二进制">gb2312_bin</option>
+<option value="gb2312_chinese_ci" title="简体中文, 不区分大小写">gb2312_chinese_ci</option>
+</optgroup>
+<optgroup label="gbk" title="GBK Simplified Chinese">
+<option value="gbk_bin" title="简体中文, 二进制">gbk_bin</option>
+<option value="gbk_chinese_ci" title="简体中文, 不区分大小写">gbk_chinese_ci</option>
+</optgroup>
+<optgroup label="geostd8" title="GEOSTD8 Georgian">
+<option value="geostd8_bin" title="乔治亚语, 二进制">geostd8_bin</option>
+<option value="geostd8_general_ci" title="乔治亚语, 不区分大小写">geostd8_general_ci</option>
+</optgroup>
+<optgroup label="greek" title="ISO 8859-7 Greek">
+<option value="greek_bin" title="希腊语, 二进制">greek_bin</option>
+<option value="greek_general_ci" title="希腊语, 不区分大小写">greek_general_ci</option>
+</optgroup>
+<optgroup label="hebrew" title="ISO 8859-8 Hebrew">
+<option value="hebrew_bin" title="希伯来语, 二进制">hebrew_bin</option>
+<option value="hebrew_general_ci" title="希伯来语, 不区分大小写">hebrew_general_ci</option>
+</optgroup>
+<optgroup label="hp8" title="HP West European">
+<option value="hp8_bin" title="西欧 (多语言), 二进制">hp8_bin</option>
+<option value="hp8_english_ci" title="英语, 不区分大小写">hp8_english_ci</option>
+</optgroup>
+<optgroup label="keybcs2" title="DOS Kamenicky Czech-Slovak">
+<option value="keybcs2_bin" title="捷克斯洛伐克语, 二进制">keybcs2_bin</option>
+<option value="keybcs2_general_ci" title="捷克斯洛伐克语, 不区分大小写">keybcs2_general_ci</option>
+</optgroup>
+<optgroup label="koi8r" title="KOI8-R Relcom Russian">
+<option value="koi8r_bin" title="俄语, 二进制">koi8r_bin</option>
+<option value="koi8r_general_ci" title="俄语, 不区分大小写">koi8r_general_ci</option>
+</optgroup>
+<optgroup label="koi8u" title="KOI8-U Ukrainian">
+<option value="koi8u_bin" title="乌克兰语, 二进制">koi8u_bin</option>
+<option value="koi8u_general_ci" title="乌克兰语, 不区分大小写">koi8u_general_ci</option>
+</optgroup>
+<optgroup label="latin1" title="cp1252 West European">
+<option value="latin1_bin" title="西欧 (多语言), 二进制">latin1_bin</option>
+<option value="latin1_danish_ci" title="丹麦语, 不区分大小写">latin1_danish_ci</option>
+<option value="latin1_general_ci" title="西欧 (多语言), 不区分大小写">latin1_general_ci</option>
+<option value="latin1_general_cs" title="西欧 (多语言), 区分大小写">latin1_general_cs</option>
+<option value="latin1_german1_ci" title="德语 (字典), 不区分大小写">latin1_german1_ci</option>
+<option value="latin1_german2_ci" title="德语 (电话本), 不区分大小写">latin1_german2_ci</option>
+<option value="latin1_spanish_ci" title="西班牙语, 不区分大小写">latin1_spanish_ci</option>
+<option value="latin1_swedish_ci" title="瑞典语, 不区分大小写">latin1_swedish_ci</option>
+</optgroup>
+<optgroup label="latin2" title="ISO 8859-2 Central European">
+<option value="latin2_bin" title="中欧 (多语言), 二进制">latin2_bin</option>
+<option value="latin2_croatian_ci" title="克罗地亚语, 不区分大小写">latin2_croatian_ci</option>
+<option value="latin2_czech_cs" title="捷克语, 区分大小写">latin2_czech_cs</option>
+<option value="latin2_general_ci" title="中欧 (多语言), 不区分大小写">latin2_general_ci</option>
+<option value="latin2_hungarian_ci" title="匈牙利语, 不区分大小写">latin2_hungarian_ci</option>
+</optgroup>
+<optgroup label="latin5" title="ISO 8859-9 Turkish">
+<option value="latin5_bin" title="土耳其语, 二进制">latin5_bin</option>
+<option value="latin5_turkish_ci" title="土耳其语, 不区分大小写">latin5_turkish_ci</option>
+</optgroup>
+<optgroup label="latin7" title="ISO 8859-13 Baltic">
+<option value="latin7_bin" title="巴拉克语 (多语言), 二进制">latin7_bin</option>
+<option value="latin7_estonian_cs" title="爱沙尼亚语, 区分大小写">latin7_estonian_cs</option>
+<option value="latin7_general_ci" title="巴拉克语 (多语言), 不区分大小写">latin7_general_ci</option>
+<option value="latin7_general_cs" title="巴拉克语 (多语言), 区分大小写">latin7_general_cs</option>
+</optgroup>
+<optgroup label="macce" title="Mac Central European">
+<option value="macce_bin" title="中欧 (多语言), 二进制">macce_bin</option>
+<option value="macce_general_ci" title="中欧 (多语言), 不区分大小写">macce_general_ci</option>
+</optgroup>
+<optgroup label="macroman" title="Mac West European">
+<option value="macroman_bin" title="西欧 (多语言), 二进制">macroman_bin</option>
+<option value="macroman_general_ci" title="西欧 (多语言), 不区分大小写">macroman_general_ci</option>
+</optgroup>
+<optgroup label="sjis" title="Shift-JIS Japanese">
+<option value="sjis_bin" title="日语, 二进制">sjis_bin</option>
+<option value="sjis_japanese_ci" title="日语, 不区分大小写">sjis_japanese_ci</option>
+</optgroup>
+<optgroup label="swe7" title="7bit Swedish">
+<option value="swe7_bin" title="瑞典语, 二进制">swe7_bin</option>
+<option value="swe7_swedish_ci" title="瑞典语, 不区分大小写">swe7_swedish_ci</option>
+</optgroup>
+<optgroup label="tis620" title="TIS620 Thai">
+<option value="tis620_bin" title="泰语, 二进制">tis620_bin</option>
+<option value="tis620_thai_ci" title="泰语, 不区分大小写">tis620_thai_ci</option>
+</optgroup>
+<optgroup label="ucs2" title="UCS-2 Unicode">
+<option value="ucs2_bin" title="Unicode (多语言), 二进制">ucs2_bin</option>
+<option value="ucs2_czech_ci" title="捷克语, 不区分大小写">ucs2_czech_ci</option>
+<option value="ucs2_danish_ci" title="丹麦语, 不区分大小写">ucs2_danish_ci</option>
+<option value="ucs2_esperanto_ci" title="世界语, 不区分大小写">ucs2_esperanto_ci</option>
+<option value="ucs2_estonian_ci" title="爱沙尼亚语, 不区分大小写">ucs2_estonian_ci</option>
+<option value="ucs2_general_ci" title="Unicode (多语言), 不区分大小写">ucs2_general_ci</option>
+<option value="ucs2_general_mysql500_ci" title="Unicode (多语言)">ucs2_general_mysql500_ci</option>
+<option value="ucs2_hungarian_ci" title="匈牙利语, 不区分大小写">ucs2_hungarian_ci</option>
+<option value="ucs2_icelandic_ci" title="冰岛语, 不区分大小写">ucs2_icelandic_ci</option>
+<option value="ucs2_latvian_ci" title="拉脱维亚语, 不区分大小写">ucs2_latvian_ci</option>
+<option value="ucs2_lithuanian_ci" title="立陶宛语, 不区分大小写">ucs2_lithuanian_ci</option>
+<option value="ucs2_persian_ci" title="波斯语, 不区分大小写">ucs2_persian_ci</option>
+<option value="ucs2_polish_ci" title="波兰语, 不区分大小写">ucs2_polish_ci</option>
+<option value="ucs2_roman_ci" title="西欧, 不区分大小写">ucs2_roman_ci</option>
+<option value="ucs2_romanian_ci" title="罗马尼亚语, 不区分大小写">ucs2_romanian_ci</option>
+<option value="ucs2_sinhala_ci" title="未知, 不区分大小写">ucs2_sinhala_ci</option>
+<option value="ucs2_slovak_ci" title="斯洛伐克语, 不区分大小写">ucs2_slovak_ci</option>
+<option value="ucs2_slovenian_ci" title="斯洛文尼亚语, 不区分大小写">ucs2_slovenian_ci</option>
+<option value="ucs2_spanish2_ci" title="传统西班牙语, 不区分大小写">ucs2_spanish2_ci</option>
+<option value="ucs2_spanish_ci" title="西班牙语, 不区分大小写">ucs2_spanish_ci</option>
+<option value="ucs2_swedish_ci" title="瑞典语, 不区分大小写">ucs2_swedish_ci</option>
+<option value="ucs2_turkish_ci" title="土耳其语, 不区分大小写">ucs2_turkish_ci</option>
+<option value="ucs2_unicode_ci" title="Unicode (多语言), 不区分大小写">ucs2_unicode_ci</option>
+</optgroup>
+<optgroup label="ujis" title="EUC-JP Japanese">
+<option value="ujis_bin" title="日语, 二进制">ujis_bin</option>
+<option value="ujis_japanese_ci" title="日语, 不区分大小写">ujis_japanese_ci</option>
+</optgroup>
+<optgroup label="utf16" title="UTF-16 Unicode">
+<option value="utf16_bin" title="未知, 二进制">utf16_bin</option>
+<option value="utf16_czech_ci" title="捷克语, 不区分大小写">utf16_czech_ci</option>
+<option value="utf16_danish_ci" title="丹麦语, 不区分大小写">utf16_danish_ci</option>
+<option value="utf16_esperanto_ci" title="世界语, 不区分大小写">utf16_esperanto_ci</option>
+<option value="utf16_estonian_ci" title="爱沙尼亚语, 不区分大小写">utf16_estonian_ci</option>
+<option value="utf16_general_ci" title="未知, 不区分大小写">utf16_general_ci</option>
+<option value="utf16_hungarian_ci" title="匈牙利语, 不区分大小写">utf16_hungarian_ci</option>
+<option value="utf16_icelandic_ci" title="冰岛语, 不区分大小写">utf16_icelandic_ci</option>
+<option value="utf16_latvian_ci" title="拉脱维亚语, 不区分大小写">utf16_latvian_ci</option>
+<option value="utf16_lithuanian_ci" title="立陶宛语, 不区分大小写">utf16_lithuanian_ci</option>
+<option value="utf16_persian_ci" title="波斯语, 不区分大小写">utf16_persian_ci</option>
+<option value="utf16_polish_ci" title="波兰语, 不区分大小写">utf16_polish_ci</option>
+<option value="utf16_roman_ci" title="西欧, 不区分大小写">utf16_roman_ci</option>
+<option value="utf16_romanian_ci" title="罗马尼亚语, 不区分大小写">utf16_romanian_ci</option>
+<option value="utf16_sinhala_ci" title="未知, 不区分大小写">utf16_sinhala_ci</option>
+<option value="utf16_slovak_ci" title="斯洛伐克语, 不区分大小写">utf16_slovak_ci</option>
+<option value="utf16_slovenian_ci" title="斯洛文尼亚语, 不区分大小写">utf16_slovenian_ci</option>
+<option value="utf16_spanish2_ci" title="传统西班牙语, 不区分大小写">utf16_spanish2_ci</option>
+<option value="utf16_spanish_ci" title="西班牙语, 不区分大小写">utf16_spanish_ci</option>
+<option value="utf16_swedish_ci" title="瑞典语, 不区分大小写">utf16_swedish_ci</option>
+<option value="utf16_turkish_ci" title="土耳其语, 不区分大小写">utf16_turkish_ci</option>
+<option value="utf16_unicode_ci" title="Unicode (多语言), 不区分大小写">utf16_unicode_ci</option>
+</optgroup>
+<optgroup label="utf32" title="UTF-32 Unicode">
+<option value="utf32_bin" title="未知, 二进制">utf32_bin</option>
+<option value="utf32_czech_ci" title="捷克语, 不区分大小写">utf32_czech_ci</option>
+<option value="utf32_danish_ci" title="丹麦语, 不区分大小写">utf32_danish_ci</option>
+<option value="utf32_esperanto_ci" title="世界语, 不区分大小写">utf32_esperanto_ci</option>
+<option value="utf32_estonian_ci" title="爱沙尼亚语, 不区分大小写">utf32_estonian_ci</option>
+<option value="utf32_general_ci" title="未知, 不区分大小写">utf32_general_ci</option>
+<option value="utf32_hungarian_ci" title="匈牙利语, 不区分大小写">utf32_hungarian_ci</option>
+<option value="utf32_icelandic_ci" title="冰岛语, 不区分大小写">utf32_icelandic_ci</option>
+<option value="utf32_latvian_ci" title="拉脱维亚语, 不区分大小写">utf32_latvian_ci</option>
+<option value="utf32_lithuanian_ci" title="立陶宛语, 不区分大小写">utf32_lithuanian_ci</option>
+<option value="utf32_persian_ci" title="波斯语, 不区分大小写">utf32_persian_ci</option>
+<option value="utf32_polish_ci" title="波兰语, 不区分大小写">utf32_polish_ci</option>
+<option value="utf32_roman_ci" title="西欧, 不区分大小写">utf32_roman_ci</option>
+<option value="utf32_romanian_ci" title="罗马尼亚语, 不区分大小写">utf32_romanian_ci</option>
+<option value="utf32_sinhala_ci" title="未知, 不区分大小写">utf32_sinhala_ci</option>
+<option value="utf32_slovak_ci" title="斯洛伐克语, 不区分大小写">utf32_slovak_ci</option>
+<option value="utf32_slovenian_ci" title="斯洛文尼亚语, 不区分大小写">utf32_slovenian_ci</option>
+<option value="utf32_spanish2_ci" title="传统西班牙语, 不区分大小写">utf32_spanish2_ci</option>
+<option value="utf32_spanish_ci" title="西班牙语, 不区分大小写">utf32_spanish_ci</option>
+<option value="utf32_swedish_ci" title="瑞典语, 不区分大小写">utf32_swedish_ci</option>
+<option value="utf32_turkish_ci" title="土耳其语, 不区分大小写">utf32_turkish_ci</option>
+<option value="utf32_unicode_ci" title="Unicode (多语言), 不区分大小写">utf32_unicode_ci</option>
+</optgroup>
+<optgroup label="utf8" title="UTF-8 Unicode">
+<option value="utf8_bin" title="Unicode (多语言), 二进制">utf8_bin</option>
+<option value="utf8_czech_ci" title="捷克语, 不区分大小写">utf8_czech_ci</option>
+<option value="utf8_danish_ci" title="丹麦语, 不区分大小写">utf8_danish_ci</option>
+<option value="utf8_esperanto_ci" title="世界语, 不区分大小写">utf8_esperanto_ci</option>
+<option value="utf8_estonian_ci" title="爱沙尼亚语, 不区分大小写">utf8_estonian_ci</option>
+<option value="utf8_general_ci" title="Unicode (多语言), 不区分大小写" selected="selected">utf8_general_ci</option>
+<option value="utf8_general_mysql500_ci" title="Unicode (多语言)">utf8_general_mysql500_ci</option>
+<option value="utf8_hungarian_ci" title="匈牙利语, 不区分大小写">utf8_hungarian_ci</option>
+<option value="utf8_icelandic_ci" title="冰岛语, 不区分大小写">utf8_icelandic_ci</option>
+<option value="utf8_latvian_ci" title="拉脱维亚语, 不区分大小写">utf8_latvian_ci</option>
+<option value="utf8_lithuanian_ci" title="立陶宛语, 不区分大小写">utf8_lithuanian_ci</option>
+<option value="utf8_persian_ci" title="波斯语, 不区分大小写">utf8_persian_ci</option>
+<option value="utf8_polish_ci" title="波兰语, 不区分大小写">utf8_polish_ci</option>
+<option value="utf8_roman_ci" title="西欧, 不区分大小写">utf8_roman_ci</option>
+<option value="utf8_romanian_ci" title="罗马尼亚语, 不区分大小写">utf8_romanian_ci</option>
+<option value="utf8_sinhala_ci" title="未知, 不区分大小写">utf8_sinhala_ci</option>
+<option value="utf8_slovak_ci" title="斯洛伐克语, 不区分大小写">utf8_slovak_ci</option>
+<option value="utf8_slovenian_ci" title="斯洛文尼亚语, 不区分大小写">utf8_slovenian_ci</option>
+<option value="utf8_spanish2_ci" title="传统西班牙语, 不区分大小写">utf8_spanish2_ci</option>
+<option value="utf8_spanish_ci" title="西班牙语, 不区分大小写">utf8_spanish_ci</option>
+<option value="utf8_swedish_ci" title="瑞典语, 不区分大小写">utf8_swedish_ci</option>
+<option value="utf8_turkish_ci" title="土耳其语, 不区分大小写">utf8_turkish_ci</option>
+<option value="utf8_unicode_ci" title="Unicode (多语言), 不区分大小写">utf8_unicode_ci</option>
+</optgroup>
+<optgroup label="utf8mb4" title="UTF-8 Unicode">
+<option value="utf8mb4_bin" title="未知, 二进制">utf8mb4_bin</option>
+<option value="utf8mb4_czech_ci" title="捷克语, 不区分大小写">utf8mb4_czech_ci</option>
+<option value="utf8mb4_danish_ci" title="丹麦语, 不区分大小写">utf8mb4_danish_ci</option>
+<option value="utf8mb4_esperanto_ci" title="世界语, 不区分大小写">utf8mb4_esperanto_ci</option>
+<option value="utf8mb4_estonian_ci" title="爱沙尼亚语, 不区分大小写">utf8mb4_estonian_ci</option>
+<option value="utf8mb4_general_ci" title="未知, 不区分大小写">utf8mb4_general_ci</option>
+<option value="utf8mb4_hungarian_ci" title="匈牙利语, 不区分大小写">utf8mb4_hungarian_ci</option>
+<option value="utf8mb4_icelandic_ci" title="冰岛语, 不区分大小写">utf8mb4_icelandic_ci</option>
+<option value="utf8mb4_latvian_ci" title="拉脱维亚语, 不区分大小写">utf8mb4_latvian_ci</option>
+<option value="utf8mb4_lithuanian_ci" title="立陶宛语, 不区分大小写">utf8mb4_lithuanian_ci</option>
+<option value="utf8mb4_persian_ci" title="波斯语, 不区分大小写">utf8mb4_persian_ci</option>
+<option value="utf8mb4_polish_ci" title="波兰语, 不区分大小写">utf8mb4_polish_ci</option>
+<option value="utf8mb4_roman_ci" title="西欧, 不区分大小写">utf8mb4_roman_ci</option>
+<option value="utf8mb4_romanian_ci" title="罗马尼亚语, 不区分大小写">utf8mb4_romanian_ci</option>
+<option value="utf8mb4_sinhala_ci" title="未知, 不区分大小写">utf8mb4_sinhala_ci</option>
+<option value="utf8mb4_slovak_ci" title="斯洛伐克语, 不区分大小写">utf8mb4_slovak_ci</option>
+<option value="utf8mb4_slovenian_ci" title="斯洛文尼亚语, 不区分大小写">utf8mb4_slovenian_ci</option>
+<option value="utf8mb4_spanish2_ci" title="传统西班牙语, 不区分大小写">utf8mb4_spanish2_ci</option>
+<option value="utf8mb4_spanish_ci" title="西班牙语, 不区分大小写">utf8mb4_spanish_ci</option>
+<option value="utf8mb4_swedish_ci" title="瑞典语, 不区分大小写">utf8mb4_swedish_ci</option>
+<option value="utf8mb4_turkish_ci" title="土耳其语, 不区分大小写">utf8mb4_turkish_ci</option>
+<option value="utf8mb4_unicode_ci" title="Unicode (多语言), 不区分大小写">utf8mb4_unicode_ci</option>
+</optgroup>
+</select>
+</td>
+                    <td align="center"><select style="font-size: 70%;" name="field_attribute[0]" id="field_0_6">                <option value=""></option>                <option value="BINARY">BINARY</option>                <option value="UNSIGNED">UNSIGNED</option>                <option value="UNSIGNED ZEROFILL">UNSIGNED ZEROFILL</option>                <option value="on update CURRENT_TIMESTAMP">on update CURRENT_TIMESTAMP</option></select></td>
+                    <td align="center"><input name="field_null[0]" id="field_0_7" type="checkbox" value="NULL"></td>
+                    <td align="center"><input name="field_extra[0]" id="field_0_8" type="checkbox" value="AUTO_INCREMENT"></td>
+                    <td align="center"><input id="field_0_9" type="text" name="field_comments[0]" size="12" value="" class="textfield"></td>
+                </tr></tbody></table>
+<br>
+    
+<fieldset class="tblFooters">
+    <input type="submit" name="do_save_data" value="保存" class="ajax">
+</fieldset>
+<div id="properties_message"></div>
+<input type="hidden" id="ajax_request_hidden" name="ajax_request" value="true"></form>
+
+<div id="popup_background"></div>
+<div class="footnotes" style="display: none; border: none; padding: 0px;"><span id="footnote_1"> 如字段类型是“enum”或“set”，请使用以下格式输入：'a','b','c'...<br>如果需要输入反斜杠(“\”)或单引号(“'”)，请在前面加上反斜杠(如 '\\xyz' 或 'a\'b')。</span><br><span id="footnote_2"> 对于默认值，请只输入单个值，不要加反斜杠或引号，请用此格式：a</span><br></div></div><div class="ui-resizable-handle ui-resizable-n"></div><div class="ui-resizable-handle ui-resizable-e"></div><div class="ui-resizable-handle ui-resizable-s"></div><div class="ui-resizable-handle ui-resizable-w"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se ui-icon-grip-diagonal-se" style="z-index: 1001;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 1002;"></div><div class="ui-resizable-handle ui-resizable-ne" style="z-index: 1003;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 1004;"></div><div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix"><div class="ui-dialog-buttonset"><button type="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">取消</span></button></div></div></div><div class="ui-widget-overlay" style="width: 974px; height: 812px; z-index: 1001;"></div></body></html>

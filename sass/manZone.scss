@@ -1,0 +1,523 @@
+@import "common";
+img{
+    width:100%;
+    height:100%;
+}
+.main-con{
+    width:1200px;
+    margin:0 auto;
+    .current{
+        width:1200px;
+        height:34px;
+        padding-top:15px;
+        line-height:34px;
+        a{
+            color:#333;
+        }
+        a:hover{
+            color:#FF1A3A;
+        }
+        i{
+            margin:0 10px;
+            color:#999;
+        }
+        span{
+            color:#4e7fc2;
+        }
+    }
+    .con-left{
+        width:230px;
+        float:left;
+        .nav-list{
+            width:228px;
+            border:1px solid #e4e4e4;
+            .amount{
+                margin-left:3px;
+                font-size:12px;
+                color:#999;
+                font-weight: normal;
+            }
+            h3{
+                width:228px;
+                height:36px;
+                background:url(../img/manZone/h3bg.jpg) repeat-x;
+                font-size:14px;
+                color:#333;
+                line-height:36px;
+                font-weight:bold;
+                cursor:pointer;
+                span{
+                    float:left;
+                    width:15px;
+                    height:14px;
+                    margin:11px;
+                    background: url(../img/detail.gif) no-repeat 0 -248px;
+                }
+                .open{
+                     background: url(../img/detail.gif) no-repeat 0 -234px;
+                }
+            }
+            ul{
+                width:154px;
+                border-bottom:1px solid #e4e4e4;
+                padding:8px 37px;
+                li{
+                    height:26px;
+                    line-height:26px;
+                    cursor:pointer;
+                    a{
+                        color:#333;
+                    }
+                }
+                li:hover{
+                    a{
+                        color:#FF1A3A;
+                    }
+                }
+            }
+        }
+        .ranktitle{
+            width:226px;
+            height:33px;
+            margin:1px;
+            background:url(../img/manZone/p2lbg.jpg) repeat-x;
+            font-size:14px;
+            line-height:33px;
+            color:#333;
+            font-family: "微软雅黑";
+            font-weight: bold;
+            text-align: center;
+            border-bottom: 1px solid #e4e4e4;
+        }
+        .week-rank{
+            width:228px;
+            border:1px solid #e4e4e4;
+            margin-top:10px;
+            dl{
+                width:216px;
+                height:180px;
+                padding:6px;
+                text-align:center;
+                border-bottom:1px dashed #e4e4e4;
+                dt{
+                    width:120px;
+                    height:120px;
+                    margin:10px auto;
+                }
+                dd{
+                    line-height:20px;
+                }
+                .pro-name{
+                    width:210px;
+                    padding:0 3px;
+                    white-space:nowrap;
+                    overflow:hidden;
+                    text-overflow:ellipsis;
+                }
+                .pro-price{
+                    font-size: 14px;
+                    color: #FF1A3A;
+                    font-family: "微软雅黑";
+                    font-weight: bold;
+                    span{
+                        font-family: verdana;
+                    }
+                }
+            }
+        }
+        .tuijian{
+            width:228px;
+            border: 1px solid #e4e4e4;
+            margin-top:10px;
+            dl{
+                width:208px;
+                height:82px;
+                padding:15px 10px;
+                border-bottom: 1px dashed #e4e4e4;
+                dt{
+                    float:left;
+                    width:82px;
+                    height:82px;
+                    padding-right:18px;
+                }
+                dd{
+                    float:left;
+                    line-height:16px;
+                }
+                .pro-name{
+                    width:102px;
+                    padding-top:15px;
+                    height:32px;
+                    overflow:hidden;
+                }
+                .pro-price{
+                    width:95px;
+                    margin-top:10px;
+                    text-align:right;
+                    font-size:14px;
+                    font-family:"微软雅黑";
+                    color:#FF1A3A;
+                    font-weight:bold;
+                    span{
+                        font-family:verdana;
+                    }
+                }
+            }
+        }
+    }
+    .no-bottombor{
+        border-bottom: none!important;
+    }
+    .con-right{
+        width:960px;
+        float:right;
+        .select{
+            width:914px;
+            border:3px solid #f4f4f4;
+            padding:20px;
+            padding-bottom:15px;
+            dl{
+                width:914px;
+                border-bottom:1px solid #f4f4f4;
+                padding:3px 0;
+                float:left;
+                dt{
+                    width:70px;
+                    float:left;
+                    text-align:right;
+                    line-height:24px;
+                    color:#000;
+                    font-weight:bold;
+                }
+                dd{
+                    width:830px;
+                    float:right;
+                }
+            }
+            .brand-box{
+                .more{
+                    float:right;
+                    width:46px;
+                    height:20px;
+                    padding-left:10px;
+                    line-height:20px;
+                    color:#333;
+                    border:1px solid #e0e0e0;
+                    border-radius:3px;
+                    background:#f7f7f7 url(../img/manZone/b.jpg) no-repeat 38px 8px;
+                    cursor:pointer;
+                }
+                ol{
+                    float:left;
+                    li{
+                        float:left;
+                        height:22px;
+                        padding:0 12px;
+                        line-height:22px;
+                        color:#06c;
+                        font-family:verdana;
+                        cursor:pointer;
+                    }
+                    .cur{
+                        background:#02A3F0;
+                        color:#fff;
+                        position:relative;
+                        em{
+                            position:absolute;
+                            left:50%;
+                            bottom:-10px;
+                            width:0px;
+                            height:0px;
+                            overflow:hidden;
+                            border:5px solid;
+                            margin-left:-4px;
+                            border-color:#02A3F0 transparent transparent transparent;
+                        }
+                    }
+                }
+                ul{
+                    width:750px;
+                    float:left;
+                    padding:10px 40px 4px 60px;
+                    li{
+                        float:left;
+                        width:145px;
+                        height:20px;
+                        padding-top:4px;
+                        white-space:nowrap;
+                        overflow:hidden;
+                        text-overflow:ellipsis;
+                        a{
+                            color:#06c;
+                            padding:1px;
+                        }
+                        a:hover{
+                            color:#fff;
+                            background:#02A3F0;
+                        }
+                    }
+                }
+            }
+            .dlbox{
+                ul{
+                    float:left;
+                    li{
+                        float:left;
+                        height:22px;
+                        padding:1px 12px;
+                        line-height:22px;
+                        font-family:verdana;
+                        cursor:pointer;
+                        a{
+                            padding:2px;
+                            color:#06c;
+                        }
+                        a:hover{
+                            color:#fff;
+                            background:#02A3F0;
+                        }
+                    }
+                    .buxian{
+                        height:20px;
+                        border:1px solid #fff;
+                        line-height:20px;
+                        background:#02A3F0;
+                        margin-right:12px;
+                        padding:1px 2px;
+                        a{
+                            color:#fff;
+                        }
+                    }
+                }
+            }
+        }
+        .filter{
+            width:938px;
+            height:26px;
+            background:url(../img/manZone/filbg.jpg) repeat-x;
+            margin-top:10px;
+            border:1px solid #eee;
+            border-top:2px solid #15ade0;
+            padding:5px 10px;
+            dl{
+                float:left;
+                line-height:26px;
+                dt{
+                    float:left;
+                }
+                dd{
+                    float:left;
+                    margin-right:5px;
+                    a{
+                        float:left;
+                        height:24px;
+                        background:#f6f6f6;
+                        border:1px solid #cecece;
+                        padding:0 10px;
+                        line-height:24px;
+                    }
+                }
+                dd:hover{
+                    a{
+                        text-decoration:underline;
+                    }
+                }
+                .cur{
+                    a{
+                        background:#fc1c5a;
+                        border:1px solid #fc1c5a;
+                        color:#fff;
+                        font-weight:bold;
+                    }
+                }
+            }
+            .page{
+                float:right;
+                height:26px;
+                border-left:1px solid #e7e3e7;
+                span,a{
+                    float:left;
+                    height:14px;
+                    background:#f8f8f8;
+                    padding:3px 10px;
+                    margin-left:2px;
+                    margin-top:2px;
+                    border:1px solid #ccc;
+                    border-radius:3px;
+                    line-height:14px;
+                    color:#005aa0;
+                    font-family:arial;
+                }
+                .yebiao{
+                    font-family:verdana;
+                    border:0;
+                    padding:4px 11px;
+                    i{
+                        font-weight:bold;
+                        color:#FC1C5A;
+                    }
+                }
+                .nopage{
+                    color:#ccc;
+                    cursor:default;
+                }
+            }
+            .amount{
+                float:right;
+                height:22px;
+                padding:2px 15px 2px 0;
+                line-height:22px;
+                font-family:verdana;
+                color:#FC1C5A;
+                strong{
+                    font-weight:bold;
+                }
+            }
+        }
+        .commodity-list{
+            width:960px;
+            margin:10px 0;
+            dl{
+                float:left;
+                width:214px;
+                height:307px;
+                padding:13px;
+                background:#fff;
+                dt{
+                    padding:7px;
+                    width:200px;
+                    height:200px;
+                    img{
+                        width:100%;
+                        height:100%;
+                    }
+                }
+                .pro-name{
+                    height:36px;
+                    line-height:18px;
+                    overflow:hidden;
+                    a:hover{
+                        color:#FF1A3A;
+                        text-decoration:underline;
+                    }
+                }
+                .pro-price{
+                    font-size:14px;
+                    color:#FF1A3A;
+                    font-family: "微软雅黑";
+                    font-weight:bold;
+                    padding:10px 0 3px 0;
+                    strong{
+                        font-size:16px;
+                        font-weight:bold;
+                        font-family:verdana;
+                    }
+                    .zhekou{
+                        font-size:12px;
+                        font-weight:normal;
+                        font-family:simsun;
+                    }
+                }
+                .buybtn{
+                    height:24px;
+                    a{
+                        float:left;
+                        padding:0 15px;
+                        border-radius:3px;
+                        text-align:center;
+                    }
+                }
+                .add{
+                    height:24px;
+                    line-height:24px;
+                    background:#fc1c5a;
+                    color:#fff;
+                }
+                .collect{
+                    height:22px;
+                    background:#efefef;
+                    margin-left:20px;
+                    border:1px solid #dfdfdf;
+                    color:#666;
+                    line-height:22px;
+                }
+            }
+            dl:hover{
+                background:#f5f5f5;
+            }
+        }
+        .page-below{
+            width:960px;
+            height:26px;
+            padding-top:20px;
+            .inner{
+                float:right;
+                a,span{
+                    float:left;
+                    height:20px;
+                    padding:2px 10px;
+                    border:1px solid #ccc;
+                    margin-left:2px;
+                    font-size:12px;
+                    line-height:20px;
+                    font-family:arial;
+                    color:#005AA0;
+                    background:#fff;
+                }
+                a:hover{
+                    background:#ccc;
+                }
+                .disa-btn{
+                    color:#ccc;
+                    cursor:default;
+                }
+                .cur{
+                    background:#02A3F0!important;
+                    border-color:#02A3F0;
+                    color:#fff;
+                    font-weight:bold;
+                    cursor:default;
+                }
+                .elli{
+                    padding:0 10px;
+                    font-family:verdana;
+                    border:none;
+                    background:none;
+                }
+            }
+        }
+        
+    }
+}
+
+/*客服及返顶*/
+.kfbox{
+    width:52px;
+    height:136px;
+    position:fixed;
+    bottom:10px;
+    right:10px;
+    z-index:1000000;
+    a{
+        display:block;
+        width:50px;
+        height:50px;
+        line-height:40px;
+        padding:8px 0;
+        border:1px solid #eee;
+        text-align:center;
+        background:#fff;
+        span{
+            display:block;
+            width:22px;
+            height:24px;
+            margin:0 auto;
+        }
+        .top{
+            background:url(../img/kf.jpg) no-repeat 0 -24px;
+        }
+        .kf{
+            background:url(../img/kf.jpg) no-repeat 0 0;
+        }
+    }
+}

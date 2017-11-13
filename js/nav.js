@@ -1,0 +1,15 @@
+$(function(){
+	$(".all-list").hover(function(){
+		$("dl[class*=list]").css("display","block").find("dt").hover(function(){
+			$(this).attr("class","hover").next("dd").css("display","block").hover(function(){
+				$(this).css("display","block").prev("dt").attr("class","hover");
+			},function(){
+				$(this).css("display","none").prev("dt").attr("class","");
+			});
+		},function(){
+			$(this).attr("class","").next("dd").css("display","none");
+		});
+	},function(){
+		$("dl[class*=list]").css("display","none");
+	})
+})

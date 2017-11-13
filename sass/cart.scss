@@ -1,0 +1,134 @@
+@charset "utf-8";
+html,body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img,input{margin:0;padding:0}
+ul,ol,li{list-style:none}
+a,u{text-decoration:none}
+b,strong{font-weight:100}
+i,em{font-style:normal}
+h1,h2,h3,h4,h5,h6{font-size:16px;font-weight:100}
+img{display:block;border:0}
+.clearfix:after{content:".";clear:both;display:block;height:0;overflow:hidden;visibility:hidden}
+
+$fontSize : 12px;
+$fontFamily : arial,\5b8b\4f53;
+
+body{
+    font-size:$fontSize;
+    color:#666;
+    font-family:$fontFamily;
+    a{
+        color:#666;
+    }
+}
+#cart-wrap{
+    width:950px;
+    margin:0 auto;
+    font-size:12px;
+    .cart-head{
+        height:28px;
+        background:url(../img/cart/cart-icon.png) no-repeat 10px 5px;
+        padding-top:40px;
+        .cart-nav{
+            float:right;
+            width:279px;
+            height:16px;
+            overflow:hidden;
+            li{
+                float:left;
+                height:16px;
+                padding:0 6px;
+                border-right:1px solid #ccc;
+                line-height:16px;
+                a{
+                    color:#999;
+                }
+                a:hover{
+                    color:#666;
+                    text-decoration:underline;
+                }
+            }
+        }
+    }
+    .cart-date{
+        width:948px;
+        text-align:center;
+        border:1px solid #ccc;
+        tr{
+            height:33px;
+            td{
+                border-bottom:1px dashed #ccc;
+            }
+            
+            a{
+                color:#039;
+            }
+            a:hover{
+                color:#FF1A3A;
+                text-decoration:underline;
+            }
+        }
+        .cart-tip{
+            background:url(../img/cart/cart-tip-bg.png) repeat-x top;
+            text-align:center;
+            color:#333;
+            th{
+                height:33px;
+                text-align:center;
+                font-family:arial,helvetica,sans-serif;
+            }
+        }
+        .total-prices{
+            font-size:14px;
+            text-align:right;
+            padding-right:10px;
+            margin:5px 0;
+            color:#333;
+            font-family:arial,helvetica,sans-serif;
+            strong{
+                font-weight:bold;
+                span{
+                    font-size:12px;
+                    color:#f00;
+                }
+            }
+        }
+    }
+    .cart-area{
+        height:30px;
+        margin-top:15px;
+        .cart-btn-dle{
+            float:left;
+            width:627px;
+            height:30px;
+            line-height:30px;
+            #ahqAccount{
+                width:160px;
+                padding:2px;
+                font-size:12px;
+                font-weight:bold;
+                font-family:verdana,arial,sans-serif;
+            }
+            #btnExchange{
+                font-size:12px;
+                padding:1px;
+            }
+        }
+        #clearCart{
+            float:left;
+            padding-top:5px;
+            margin-right:15px;
+            img{
+                display:inline-block;
+            }
+        }
+        .car-btn{
+            float:left;
+            margin-left:10px;
+            img{
+                display:inline-block;
+            }
+        }
+    }
+    
+    
+    
+}

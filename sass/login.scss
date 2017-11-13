@@ -1,0 +1,136 @@
+@import "common";
+
+/*main*/
+.main-con{
+    width:958px;
+    height:493px;
+    margin:10px auto 0;
+    padding:10px;
+    border:1px solid #c6e6f3;
+    div{
+        float:left;
+        width:455px;
+        height:413px;
+        padding:40px 10px 0 10px;
+    }
+    .login{
+        h2{
+            width:438px;
+            height:43px;
+            background:url(../img/reg-bg.png) no-repeat -162px -152px;
+            margin-bottom:37px;
+        }
+    }
+    i{
+        float:left;
+        width:1px;
+        height:403px;
+        background:url(../img/reg-bg.png) no-repeat -928px -83px;
+    }
+    .register{
+        h2{
+            width:438px;
+            height:43px;
+            background:url(../img/reg-bg.png) no-repeat -162px -196px;
+            margin-left:15px;
+            margin-bottom:37px;
+        }
+    }
+    .log-reg-box{
+        .login-input{
+            height:55px;
+            margin-left:50px;
+            font-size:12px;
+            position:relative;
+            label{
+                display:inline-block;
+                width:60px;
+                text-align:right;
+            }
+            input{
+                height:16px;
+                padding:2px;
+                border:1px solid #7f9db9;
+            }
+            u{
+                display:none;
+                position:absolute;
+                top:5px;
+                left:300px;
+                width:13px;
+                height:12px;
+                background:url(../img/right.png) no-repeat;
+            }
+            span{
+                display:block;
+                height:20px;
+                line-height:22px;
+                font-size:12px;
+                padding-left:65px;
+                color:#515151;
+                font-family:verdana,geneva,arial,helvetica,sans-serif;
+                white-space:normal;
+            }
+            .user-input,.input-default{
+                width:200px;
+                font-size:14px;
+                font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+            }
+            .input-focus{
+                border-color:#008;
+                background:#eaf5ff;
+            }
+            .input-failure{
+                border:1px solid maroon;
+                background-color:#fffddf;
+                color:#800;
+            }
+            .yanzheng{
+                width:50px;
+            }
+            a{
+                color:#00b6f2;
+            }
+            a:hover{
+                color:orange;
+                text-decoration:underline;
+            }
+        }
+        .log-reg-yanzheng{
+            position:relative;
+            b{
+                position:absolute;
+                top:0;
+                left:125px;
+                width:60px;
+                height:22px;
+                font-size:24px;
+                line-height:22px;
+                background:#ccc;
+                text-align:center;
+            }
+        }
+        .log-reg-btn{
+            width:90px;
+            height:55px;
+            margin:0 auto;
+        }
+        .other-login{
+            width:405px;
+            height:30px;
+            padding-left:50px;
+            line-height:30px;
+            a{
+                float:left;
+                margin-right:5px;
+            }
+        }
+        .agree{
+            height:55px;
+            text-align:center;
+            a{
+                color:#0080ff;
+            }
+        }
+    }
+}

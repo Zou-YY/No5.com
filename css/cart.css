@@ -1,0 +1,160 @@
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img, input {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+a, u {
+  text-decoration: none;
+}
+
+b, strong {
+  font-weight: 100;
+}
+
+i, em {
+  font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 16px;
+  font-weight: 100;
+}
+
+img {
+  display: block;
+  border: 0;
+}
+
+.clearfix:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+body {
+  font-size: 12px;
+  color: #666;
+  font-family: arial, \5b8b\4f53;
+}
+body a {
+  color: #666;
+}
+
+#cart-wrap {
+  width: 950px;
+  margin: 0 auto;
+  font-size: 12px;
+}
+#cart-wrap .cart-head {
+  height: 28px;
+  background: url(../img/cart/cart-icon.png) no-repeat 10px 5px;
+  padding-top: 40px;
+}
+#cart-wrap .cart-head .cart-nav {
+  float: right;
+  width: 279px;
+  height: 16px;
+  overflow: hidden;
+}
+#cart-wrap .cart-head .cart-nav li {
+  float: left;
+  height: 16px;
+  padding: 0 6px;
+  border-right: 1px solid #ccc;
+  line-height: 16px;
+}
+#cart-wrap .cart-head .cart-nav li a {
+  color: #999;
+}
+#cart-wrap .cart-head .cart-nav li a:hover {
+  color: #666;
+  text-decoration: underline;
+}
+#cart-wrap .cart-date {
+  width: 948px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+#cart-wrap .cart-date tr {
+  height: 33px;
+}
+#cart-wrap .cart-date tr td {
+  border-bottom: 1px dashed #ccc;
+}
+#cart-wrap .cart-date tr a {
+  color: #039;
+}
+#cart-wrap .cart-date tr a:hover {
+  color: #FF1A3A;
+  text-decoration: underline;
+}
+#cart-wrap .cart-date .cart-tip {
+  background: url(../img/cart/cart-tip-bg.png) repeat-x top;
+  text-align: center;
+  color: #333;
+}
+#cart-wrap .cart-date .cart-tip th {
+  height: 33px;
+  text-align: center;
+  font-family: arial,helvetica,sans-serif;
+}
+#cart-wrap .cart-date .total-prices {
+  font-size: 14px;
+  text-align: right;
+  padding-right: 10px;
+  margin: 5px 0;
+  color: #333;
+  font-family: arial,helvetica,sans-serif;
+}
+#cart-wrap .cart-date .total-prices strong {
+  font-weight: bold;
+}
+#cart-wrap .cart-date .total-prices strong span {
+  font-size: 12px;
+  color: #f00;
+}
+#cart-wrap .cart-area {
+  height: 30px;
+  margin-top: 15px;
+}
+#cart-wrap .cart-area .cart-btn-dle {
+  float: left;
+  width: 627px;
+  height: 30px;
+  line-height: 30px;
+}
+#cart-wrap .cart-area .cart-btn-dle #ahqAccount {
+  width: 160px;
+  padding: 2px;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: verdana,arial,sans-serif;
+}
+#cart-wrap .cart-area .cart-btn-dle #btnExchange {
+  font-size: 12px;
+  padding: 1px;
+}
+#cart-wrap .cart-area #clearCart {
+  float: left;
+  padding-top: 5px;
+  margin-right: 15px;
+}
+#cart-wrap .cart-area #clearCart img {
+  display: inline-block;
+}
+#cart-wrap .cart-area .car-btn {
+  float: left;
+  margin-left: 10px;
+}
+#cart-wrap .cart-area .car-btn img {
+  display: inline-block;
+}
+
+/*# sourceMappingURL=cart.css.map */

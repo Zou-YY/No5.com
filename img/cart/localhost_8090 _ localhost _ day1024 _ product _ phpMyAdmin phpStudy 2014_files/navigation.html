@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!-- saved from url=(0097)http://localhost:8090/phpMyAdmin/navigation.php?token=3962c389da5c79346da0da09fb38a975&db=day1024 -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh" lang="zh" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="icon" href="http://localhost:8090/phpMyAdmin/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="http://localhost:8090/phpMyAdmin/favicon.ico" type="image/x-icon">
+    <title>phpMyAdmin</title>
+    
+    <!--<base target="frame_content">--><base href="." target="frame_content">
+    <link rel="stylesheet" type="text/css" href="./phpmyadmin.css.php">
+    <script src="./jquery-1.6.2+fix-9521.js.下载" type="text/javascript"></script>
+<script src="./jquery-ui-1.8.16.custom.js.下载" type="text/javascript"></script>
+<script src="./jquery.qtip-1.0.0-rc3.js.下载" type="text/javascript"></script>
+<script src="./navigation.js.下载" type="text/javascript"></script>
+<script src="./functions.js.下载" type="text/javascript"></script>
+<script src="./messages.php" type="text/javascript"></script>
+<script src="./get_image.js.php" type="text/javascript"></script>
+    <script type="text/javascript">
+    // <![CDATA[
+    // INIT PMA_setFrameSize
+    var onloadCnt = 0;
+    var onLoadHandler = window.onload;
+    var resizeHandler = window.onresize;
+    window.document.onresize  = resizeHandler;
+    window.onload = function() {
+        if (onloadCnt == 0) {
+            if (typeof(onLoadHandler) == "function") {
+                onLoadHandler();
+            }
+            if (typeof(PMA_setFrameSize) != 'undefined' && typeof(PMA_setFrameSize) == 'function') {
+                PMA_setFrameSize();
+            }
+            onloadCnt++;
+        }
+    };
+    window.onresize = function() {
+        if (typeof(resizeHandler) == "function") {
+            resizeHandler();
+        }
+        if (typeof(PMA_saveFrameSize) != 'undefined' && typeof(PMA_saveFrameSize) == 'function') {
+            PMA_saveFrameSize();
+        }
+    };
+    // ]]>
+    </script>
+        <!--[if IE 6]>
+    <style type="text/css">
+    /* <![CDATA[ */
+    html {
+        overflow-y: scroll;
+    }
+    /* ]]> */
+    </style>
+    <![endif]-->
+</head>
+
+<body id="body_leftFrame">
+<div id="pmalogo">
+<a href="http://localhost:8090/phpMyAdmin/main.php?token=3962c389da5c79346da0da09fb38a975" target="frame_content"><img src="./logo_left.png" alt="phpMyAdmin" id="imgpmalogo"></a>
+</div>
+<div id="leftframelinks">
+<a href="http://localhost:8090/phpMyAdmin/main.php?token=3962c389da5c79346da0da09fb38a975" title="主页"><img src="./dot.gif" title="主页" alt="主页" class="icon ic_b_home"></a>
+<a href="http://localhost:8090/phpMyAdmin/index.php?token=3962c389da5c79346da0da09fb38a975&amp;old_usr=root" target="_parent" title="退出"><img src="./dot.gif" title="退出" alt="退出" class="icon ic_s_loggoff"></a>
+<a href="http://localhost:8090/phpMyAdmin/querywindow.php?db=day1024&amp;token=3962c389da5c79346da0da09fb38a975&amp;no_js=true" title="查询窗口" onclick="if (window.parent.open_querywindow()) return false;"><img src="./dot.gif" title="查询窗口" alt="查询窗口" class="icon ic_b_selboard"></a>
+    <a href="http://localhost:8090/phpMyAdmin/Documentation.html" target="documentation" title="phpMyAdmin 文档"><img src="./dot.gif" title="phpMyAdmin 文档" alt="phpMyAdmin 文档" class="icon ic_b_docs"></a><a href="http://localhost:8090/phpMyAdmin/url.php?url=http%3A%2F%2Fdev.mysql.com%2Fdoc%2Frefman%2F5.5%2Fen%2Findex.html&amp;token=3962c389da5c79346da0da09fb38a975" target="mysql_doc"><img src="./dot.gif" title="文档" alt="文档" class="icon ic_b_sqlhelp"></a>
+<a href="http://localhost:8090/phpMyAdmin/navigation.php??uniqid=59f94b58b19b3&amp;db=day1024&amp;token=3962c389da5c79346da0da09fb38a975" title="刷新导航框架" target="frame_navigation"><img src="./dot.gif" title="刷新导航框架" alt="刷新导航框架" class="icon ic_s_reload"></a></div>
+<div id="recentTableList">
+<form method="post" action="http://localhost:8090/phpMyAdmin/index.php" target="_parent">
+<input type="hidden" name="token" value="3962c389da5c79346da0da09fb38a975">
+<input type="hidden" name="goto" id="LeftDefaultTabTable" value="tbl_structure.php"><select name="selected_recent_table" id="recentTable"><option value="">(最近使用的表) ...</option><option value="{&quot;db&quot;:&quot;day1024&quot;,&quot;table&quot;:&quot;product&quot;}">`day1024`.`product`</option></select><noscript>
+&lt;input type="submit" name="Go" value="执行" /&gt;
+</noscript>
+</form>
+</div>
+
+    <div id="databaseList">
+    <form method="post" action="http://localhost:8090/phpMyAdmin/index.php" target="_parent" id="left">
+    <input type="hidden" name="token" value="3962c389da5c79346da0da09fb38a975">
+<select name="db" id="lightm_db" xml:lang="en" dir="ltr" onchange="if (this.value != &#39;&#39;) window.parent.openDb(this.value);">
+<option value="" dir="ltr">(数据库) ...</option>
+<option value="day1024" title="" selected="selected">day1024</option>
+<option value="information_schema" title="">information_schema</option>
+<option value="mydb001" title="">mydb001</option>
+<option value="mysql" title="">mysql</option>
+<option value="mytest" title="">mytest</option>
+<option value="performance_schema" title="">performance_schema</option>
+<option value="test" title="">test</option>
+</select>
+<noscript>
+&lt;input type="submit" name="Go" value="执行" /&gt;
+</noscript>
+</form>
+</div>
+
+<div id="left_tableList">
+<ul id="subel0"><li>
+<a class="tableicon" title="结构:  (7 行数)" id="quick_day1024.cart" href="http://localhost:8090/phpMyAdmin/tbl_structure.php?db=day1024&amp;token=3962c389da5c79346da0da09fb38a975&amp;table=cart&amp;goto=tbl_structure.php"><img src="./dot.gif" title="结构" alt="结构" id="icon_day1024.cart" class="icon ic_b_browse"></a><a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;token=3962c389da5c79346da0da09fb38a975&amp;table=cart&amp;pos=0" title="浏览:  (7 行数)" id="day1024.cart">cart</a></li>
+<li>
+<a class="tableicon" title="结构:  (6 行数)" id="quick_day1024.class" href="http://localhost:8090/phpMyAdmin/tbl_structure.php?db=day1024&amp;token=3962c389da5c79346da0da09fb38a975&amp;table=class&amp;goto=tbl_structure.php"><img src="./dot.gif" title="结构" alt="结构" id="icon_day1024.class" class="icon ic_b_browse"></a><a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;token=3962c389da5c79346da0da09fb38a975&amp;table=class&amp;pos=0" title="浏览:  (6 行数)" id="day1024.class">class</a></li>
+<li class="marked">
+<a class="tableicon" title="结构:  (10)" id="quick_day1024.product" href="http://localhost:8090/phpMyAdmin/tbl_structure.php?db=day1024&amp;token=3962c389da5c79346da0da09fb38a975&amp;table=product&amp;goto=tbl_structure.php"><img src="./dot.gif" title="结构" alt="结构" id="icon_day1024.product" class="icon ic_b_browse"></a><a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;token=3962c389da5c79346da0da09fb38a975&amp;table=product&amp;pos=0" title="浏览:  (10)" id="day1024.product">product</a></li>
+<li>
+<a class="tableicon" title="结构:  (17 行数)" id="quick_day1024.user" href="http://localhost:8090/phpMyAdmin/tbl_structure.php?db=day1024&amp;token=3962c389da5c79346da0da09fb38a975&amp;table=user&amp;goto=tbl_structure.php"><img src="./dot.gif" title="结构" alt="结构" id="icon_day1024.user" class="icon ic_b_browse"></a><a href="http://localhost:8090/phpMyAdmin/sql.php?db=day1024&amp;token=3962c389da5c79346da0da09fb38a975&amp;table=user&amp;pos=0" title="浏览:  (17 行数)" id="day1024.user">user</a></li>
+</ul><ul id="newtable"><li><a target="frame_content" href="http://localhost:8090/phpMyAdmin/tbl_create.php?db=day1024&amp;token=3962c389da5c79346da0da09fb38a975" class="ajax"><img src="./dot.gif" title="新建数据表" alt="新建数据表" id="icon_newtable" class="icon ic_b_snewtbl">新建数据表</a></li></ul></div>
+</body></html>
